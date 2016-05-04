@@ -1,0 +1,6 @@
+.layout .inner{ border:1px solid #e8e7e7; width:998px;  text-align: center; margin:20px auto;}
+.inner .box{ padding:55px 244px;}
+.inner .box .right p.big{ color:#6a5a55; font-size:14px}
+.inner .box .right p.small{ color:#b8b8b8;}
+.inner .box .right{padding-left:31px; *display: inline;}
+.inner .box .right p.link a{ color:#ee7847}

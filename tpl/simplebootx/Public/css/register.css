@@ -1,0 +1,64 @@
+.layout{ font-size: 14px; color:#44302a}
+.layout .title{ border-bottom: 2px solid #EB6128; margin-top: 10px; margin-bottom: 5px;}
+.layout .title #loginBtn{ color: #EB6128;}
+.layout .title #loginBtn:hover{  text-decoration: underline;}
+.layout .title .fr{ padding-top:9px; padding-right:5px;}
+
+.regBox .Ttitle{  text-align: center; width: 100%;
+padding-top: 10px;
+padding-bottom: 10px;
+font-weight: bolder; background: #44302A; color:#FFF;font-size: 16px;}
+.regInput{ border:1px solid #f6b490;  background: #FEF2F1;}
+.ll{margin: 15px 0;
+line-height: 25px;
+font-size: 15px;}
+.regInput .ll span {
+display:inline-block;zoom:1; *display:inline;
+width: 20%;
+text-align: right;
+}
+.regInput .ll input {
+
+width: 43%;
+height: 30px;
+line-height: 34px\9;
+font-size: 15px;
+border:1px solid #ddd;
+border-radius:4px;
+-webkit-border-radius:4px;
+-khtml-border-radius:4px;
+-moz-border-radius:4px;
+text-indent: 0.5em;
+}
+.yzm a{ color:#ee746e}
+ #chk{ vertical-align: middle;}
+ .finish{  padding-top: 10px;}
+
+.regInput .ll  .ui-tip-error{ width:233px; text-align: left;  visibility: hidden;}
+.regInput .ll  .ui-tip-error.show{ visibility: visible;}
+#dl{line-height:2;}.lp-login-box .lp-email,.lp-login-box .lp-password,.lp-login-qq,.lp-login-sina,.lp-login-close{background:url(../images/login-i.png) no-repeat;}
+.lp-module-dom{background:#f7f7f6;border:1px solid #ecedee;border-top:3px solid #f50;padding:20px 0 30px;line-height:40px;}.lp-module-dom .ui-form-item{padding:10px 5px 10px 170px;}
+.ui-label {float:left;width:170px;margin-left:-180px;text-align:right;}.ui-input {width:230px;padding:7px 9px;line-height:18px;border:1px solid #ccc;border-top-color:#a6a6a6;border-radius:3px;}
+.lp-module-dom .ui-form-item span{color:#f85001;}.lp-module-dom .ui-form-item,.lp-module-dom .ui-form-item .ui-tiptext,.lp-module-dom .ui-input,.ui-form-item a{color:#777;}
+.ui-form-item a.yx{color:#f50;}.lp-regis-name i{color:#2a60ab;font-style:normal;}.lp-module-dom .lp-login-title {padding:0 0 0 105px;line-height:25px;height:25px;font-size:16px;font-weight:bold;}
+.lp-cuo,.lp-dui,.lp-tan{display:inline-block;width:15px;height:15px;text-shadow:0 1px 0 #fff;background:url(../images/login-i.png) no-repeat;margin:0 0 0 5px;vertical-align:middle;}
+.lp-cuo{background-position:-140px -150px;}.lp-dui{background-position:-140px -190px;}.lp-tan{background-position:-140px -230px;}
+.lp-module-dom .ui-button{display:inline-block;padding:0 38px;height:35px;line-height:35px;margin:0 10px 0 0;border:none;border-radius:3px;color:#fff;background:#f50;cursor:pointer;}
+.lp-module-dom .ui-button:hover{background:#f60;text-decoration:none;color:#fff;}
+.lp-module-dom .ui-button-green{background:#62a714;}.lp-module-dom .ui-button-green:hover{background:#75c914;}.lp-module-dom .ui-form{width:680px;float:left;border-right:1px solid #e9eaec;}
+.lp-line{border-top:1px solid #e9eaec;border-bottom:1px solid #fff;height:0;line-height:0;padding:0;}.lp-login-other .lp-line{padding:0;margin:17px 0 0;}.ui-tiptext-error{float:right;margin:0 150px 0 0;font-weight:normal;color:#f00;}
+.regInput #reg_yzm{
+	color: #fff;
+	margin-left: -90px;
+	vertical-align: middle;
+	background-color: #EB6128;
+	cursor: pointer;
+	width: 85px;
+	display: inline-block;
+	height: 31.5px;
+	line-height: 32px;
+	margin-top: -1.5px;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+	margin-right: 1px;
+}

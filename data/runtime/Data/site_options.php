@@ -1,0 +1,1 @@
+a:10:{s:9:"site_name";s:30:"广厦同祥房产分销平台";s:9:"site_host";s:22:"http://fx.imifang.net/";s:9:"site_root";s:0:"";s:8:"site_icp";s:0:"";s:16:"site_admin_email";s:13:"974291@qq.com";s:11:"site_tongji";s:0:"";s:14:"site_copyright";s:0:"";s:14:"site_seo_title";s:30:"广厦同祥房产分销平台";s:17:"site_seo_keywords";s:0:"";s:20:"site_seo_description";s:30:"广厦同祥房产分销平台";}

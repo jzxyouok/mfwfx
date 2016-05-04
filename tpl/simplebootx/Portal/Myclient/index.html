@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>觅房网房产分销平台</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="__TMPL__Public/css/public.css" type="text/css">
+		<link rel="stylesheet" href="__TMPL__Public/css/client.css" type="text/css">
+		<script type="text/javascript" src="__TMPL__Public/js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="__TMPL__Public/js/main.js"></script>
+		<style>
+			body { overflow:-Scroll;overflow-x:hidden}
+		</style>
+	</head>
+	<body>
+            <tc_include file="Public:nav" />
+<!-- //正文开始 -->
+	<div class="layout">
+		<ul id="so" class="mt10">
+			<li>
+				<i>客户状态</i>
+				<b>
+					<a href="{:U('Myclient/index',array('status'=>0))}" class="c">不限</a>
+					<a href="{:U('Myclient/index',array('status'=>1))}">审核</a>
+					<a href="{:U('Myclient/index',array('status'=>2))}">预约</a>
+					<a href="{:U('Myclient/index',array('status'=>3))}">到访</a>
+					<a href="{:U('Myclient/index',array('status'=>4))}">认筹</a>
+					<a href="{:U('Myclient/index',array('status'=>5))}">认购</a>
+					<a href="{:U('Myclient/index',array('status'=>6))}">签约</a>
+					<a href="{:U('Myclient/index',array('status'=>7))}">结佣 </a>
+				</b>
+			</li>
+			<form action="{:U('Myclient/index',array('status'=>9))}" method="post"  id="_form">
+				<input type="text" class="txt" name="name" id="k" onblur="if(this.value=='') this.value='输入客户姓名或手机号码进行查询';" onfocus="if(this.value=='输入客户姓名或手机号码进行查询') this.value='';" value="输入客户姓名或手机号码进行查询">
+				<input type="submit" class="btn" value="查 询" onclick="document.getElementById('_form').submit();">
+				<!--<a href="javascript:void(0);" id="lurukehu" class="btn2">录入客户</a>-->
+		</ul>
+		<ul id="so" class="mt10">
+			<div class="kh_content">客户总数为<span>{$count}</span>位</div>
+		</ul>
+			<div class="add_tab">
+				
+			</div>
+		<table id="yj_box" border="1" bordercolor="#cccccc" cellpadding="10"  >
+			<tbody>
+				<tr class="">
+					<th width="6%">客户ID</th>
+					<th width="12%">客户姓名</th>
+					<th width="12%">区域</th>
+					<th width="12%">电话</th>
+					<th width="12%">意向楼盘</th>
+					<th width="12%">意向户型</th>
+					<th width="12%">意向面积</th>
+					<th width="12%">意向价位</th>
+					
+					<th width="12%">客户状态</th>
+				</tr>
+			</tbody>
+			<foreach name="data" item="v">
+					<tr class="f-li">
+						<td>{$v.id}</td>
+						<td>{$v.name}</td>
+						<td>{$v.city}</td>
+						<td>{$v.tel}</td>
+						<td>{$v.buliding}</td>
+						<td>{$v.house}</td>
+						<td>{$v.area}&nbsp;M<sup>2</sup></td>
+						<td>￥{$v.price}&nbsp;&nbsp;万元</td>
+
+			<if condition="$v['rstutas'] eq '1'">
+			<if condition="($v['s_id'] eq 1)">
+						<td class="changeBtn last">
+							待审核
+							<span class="dataspan"></span>
+						</td>
+			<elseif condition="$v['s_id'] eq 2" />
+			<!-- s_id为用户带看状态1.待确认2已确认3带看中4带看有效5待结佣6已结佣 7无效客户 -->
+						<td class="changeBtn last">
+							待预约
+							<span class="dataspan"></span>
+						</td>
+			<elseif condition="$v['s_id'] eq 3" />
+						<td class="changeBtn last">
+							待到访
+							<span class="dataspan"></span>
+						</td>
+			<elseif condition="$v['s_id'] eq 4" />
+						<td class="changeBtn last">
+							待认筹
+							<span class="dataspan"></span>
+						</td>
+			<elseif condition="$v['s_id'] eq 5" />
+						<td class="changeBtn last">
+							待认购
+							<span class="dataspan"></span>
+						</td>
+			 <elseif condition="$v['s_id'] eq 6" />     
+						<td class="changeBtn last">
+							待签约
+							<span class="dataspan"></span>
+						</td>      
+			 <elseif condition="$v['s_id'] eq 7" /> 
+						<td class="changeBtn last">
+							待结佣
+							<span class="dataspan"></span>
+						</td> 
+			 <elseif condition="$v['s_id'] eq 8" /> 
+						<td class="changeBtn last">
+							已结佣
+							<span class="dataspan"></span>
+						</td>       
+			   </if>         
+			   <else/>
+			   <td>已终结</td>
+			   </if>
+					</tr>
+			</foreach>
+		</table>
+		<ul class="ui-paging"></ul>
+	</div> 
+    <!-- 分页-->
+	<div class="AspNetPager"><div class="paginator">{$page}</div></div>
+		
+<!--底部 
+	 <p id="bg" style=" display: none;"></p>
+	<div id="tj" style="top: 130px; display: none;">
+		<ul id="tit">
+			<li class="c">新增客户</li>
+		</ul>
+		<div class="add_kh_close">
+			<a id="closeBtn1" class="close_btn1" title="关闭窗口" href="javascript:void(0)" style="color: rgb(153, 153, 153);">×</a>
+		</div>
+		<form id="tj_form" action="/index.php/fenxiao/add_client" method="post">
+		<input type="hidden" class="txt" id="cid" name="=cid" value="">
+		<div class="tj_box">
+			<dl>
+				<dt><i>*</i>姓名</dt>
+				<dd><input type="text" class="txt" id="tj_name" name="cname"></dd>
+			</dl>
+			<dl>
+				<dt><i>*</i>手机</dt>
+				<dd><input type="text" class="txt" id="tj_mobile" name="mobile"></dd>
+			</dl>
+			<dl id="lp_str_dl">
+				<dt>意向楼盘</dt>
+				<dd><input type="text" class="txt" id="lp_str" readonly="true"></dd>
+				<input type="hidden" class="txt" id="lp_id_str" name="=fx_id" value="">
+			</dl>
+			<dl>
+				<div class="tanchuang" style="display: none;border: 1px solid #e4e5eb;" id="tanchuang">
+					<table width="100%" border="0" cellpadding="6" cellspacing="1">
+						<tbody>
+							<tr>
+								<td colspan="2" bgcolor="#FFF7F2" style="border-bottom:1px solid #e4e5eb;">
+									<a id="closeBtn" class="close_btn" title="关闭窗口" href="javascript:void(0)" style="color: rgb(153, 153, 153);">×</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									金科世界城<input type="checkbox" class="chb" id="fx_68" value="68" data-name="金科世界城">
+								</td>
+								<td>
+									浩龙音乐界<input type="checkbox" class="chb" id="fx_180" value="180" data-name="浩龙音乐界">
+								</td>    
+							</tr>
+							<tr>
+								<td>
+									旷远洋湖18克拉<input type="checkbox" class="chb" id="fx_178" value="178" data-name="旷远洋湖18克拉">
+								</td>
+								<td>
+									梅溪湖金茂悦<input type="checkbox" class="chb" id="fx_179" value="179" data-name="梅溪湖金茂悦">
+								</td>    
+							</tr>
+						</tbody>
+					</table>
+				 </div>
+			</dl>
+			<dl>
+				<a href="javascript:void(0);" class="btn" target="_top" id="tj_btn" data-subtype="3">提交推荐信息</a>
+			</dl>
+		</div>
+		</form>
+	</div>
+        <!--底部-->
+        <script type="text/javascript">
+        	$(function(){
+        		$(".menubar ul li").eq(2).addClass("active").siblings().removeClass("active");
+
+        		$(".f-li").hover(
+        			function(){
+        				$(this).addClass("focus");
+        				$(this).children(".last").addClass("gps");
+        				$(this).children(".last").children("span").show();
+        				var id = $(this).find("td:first").html();
+        				//alert(id);
+        				$.ajax({
+        				         type: "POST",
+        				         url: "{:U('Fang/reason')}",
+        				         dataType:'text',
+        				         data: {id:id},
+        				         success: function(data){
+        				      		$(".dataspan").html(data);
+        				         	}
+        				     });
+
+        			},
+        			function(){
+        				$(this).removeClass("focus");
+        				$(this).children(".last").removeClass("gps");
+        				$(this).children(".last").children("span").hide();
+        			}
+        		)
+        		 
+        		/*$("#lp_str").click(function(){
+        		$("#tanchuang").show();
+        		});
+        		
+        		$("#closeBtn").click(function(){
+        		$("#tanchuang").hide();	
+        		});
+        		
+        		$(".chb").click(function(){
+                                 var name_str='',id_str='';
+                            $(".chb").each(function(){
+                                     if($(this).prop("checked") && !$(this).prop("disabled"))
+                                {
+                                    name_str += $(this).attr("data-name") + ",";
+                                    id_str += $(this).val() + ",";
+                                }
+                            })
+                                     name_str = name_str.replace(/(,$)/g, "");
+                                      id_str = id_str.replace(/(,$)/g, "");
+                            $("#lp_str").val(name_str);
+                            $("#lp_id_str").val(id_str);
+            })
+        		
+        		$("#bg").height($(window).height());
+        		$("#closeBtn1").click(function(){
+        			$("#tj,#bg").hide();
+        		});
+        		$("#so .btn2").click(function(){
+        			$("#tj,#bg").show();
+        		});*/
+        	})
+        </script>
+        <div class="mb10"></div>
+        <tc_include file="Public:footer" />
+	</body>
+</html>

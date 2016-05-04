@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>觅房网房产分销平台</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" href="__TMPL__Public/css/public.css" type="text/css">
+	<link rel="stylesheet" href="__TMPL__Public/css/fang.css" type="text/css">
+	<script type="text/javascript" src="__TMPL__Public/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="__TMPL__Public/js/main.js"></script>
+	<style>
+		body { overflow:-Scroll;overflow-x:hidden}
+	</style>
+	</head>
+	<body>
+	<tc_include file="Public:nav" />
+		<ul id="so" class="mt10">
+			<div class="tj_box" id="tj_box0">
+				<form action="{:U('Broker/post')}" method="post" id="_form">
+					<span><i style="color:red">*&nbsp;&nbsp;</i>经纪人帐号：</span>
+					<input type="text" class="txt" id="loginname" name="loginname" placeholder="请填写手机号码"><br>
+
+					<span><i style="color:red">*&nbsp;&nbsp;</i>经纪人密码：</span>
+					<input type="password" class="txt" id="password" maxlength="16" name="password" placeholder="请填写密码"><br>
+
+					<span><i style="color:red">*&nbsp;&nbsp;</i>确认密码：</span>
+					<input type="password" class="txt" id="rpassword" maxlength="16" name="password" placeholder="请填写密码"><br>
+
+					<span><i style="color:red">*&nbsp;&nbsp;</i>经纪人姓名：</span>
+					<input type="text" class="txt" id="name"  name="name" placeholder="请填写姓名"><br>
+
+					<span><i style="color:red">*&nbsp;&nbsp;</i>经纪人性别：</span>
+					<input type="radio" value="1" name="sex" checked="checked" class="sex">男
+					<input type="radio" value="2" name="sex" style="margin-left:15px" class="sex">女<br>
+
+					<input type="hidden" name="u_id" value="{$Think.session.id}">
+					<a href="javascript:void(0);"  class="btn" id="addclient"  onclick="document.getElementById('_form').submit();">提交推荐信息</a>
+				</form>
+			</div>
+		</ul>
+		<div class="mt10"></div>
+	<tc_include file="Public:footer" />	
+<script type="text/javascript">
+	$(function(){
+		$(".menubar ul li").eq(2).addClass("active").siblings().removeClass("active");
+		// 固定footer
+		var h = $(document.body).height();
+		var _height = $(window).height();
+		var changecss = {
+			position:"absolute",
+			bottom:"0"
+		};
+		if(h<=_height){
+			$(".footer").css(changecss);
+		}
+		
+	})
+</script>
+	</body>
+
+</html>

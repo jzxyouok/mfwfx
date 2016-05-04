@@ -1,0 +1,93 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+	<ul class="nav nav-tabs">
+	 	<li class="active"><a href="javascript:;">所有经纪人</a></li>
+	</ul>
+	<form class="well form-search" method="post" action="{:u('Broker/index')}">
+		<div class="search_type cc mb10">
+			<div class="mb10"> 
+				<span class="mr20">
+				       &nbsp; &nbsp;关键字：
+					<input type="text" class="input length_2" name="keyword" style="width:200px;" value="" placeholder="请输入手机号码搜索...">
+					<input type="submit" class="btn" value="搜索"/>
+				</span>
+			</div>
+		</div>
+	</form>
+<form class="J_ajaxForm" action="" method="post">
+	<div class="table_list">
+		<table width="100%" class="table table-hover">
+			<thead>
+				<tr>
+					<th width="10%">
+						<label>
+							<input type="checkbox" class="J_check_all" data-direction="x" data-checklist="J_check_x">
+						</label>
+					</th>
+					<th width="10%">手机号码</th>
+					<th width="10%">ID</th>
+					<th width="10%">用户名</th>
+					<th width="10%">性别</th>
+					<th width="10%">头像</th>
+					<th width="10%">用户角色</th>
+					<th width="12%">操作</th>
+				</tr>
+			</thead>
+
+			<foreach name="user" item="vo">
+				<tr class="putdata">
+					<td>
+						<input type="checkbox" class="J_check" data-yid="J_check_y" data-xid="J_check_x" name="id[]" value="{$vo.id}" >
+					</td>
+					<td>{$vo.loginname}</td>
+					<td>{$vo.id}</td>
+					<td><span>{$vo.name}</span></td>
+					<if condition="$vo['sex'] eq 1">
+					<td>男</td>
+					<else />
+					<td>女</td>
+					</if>
+					<td><img src="{:sp_get_asset_upload_path($vo['img'])}" alt="" width="60px" height="60px"></td>
+					<if condition="$vo['r_id'] eq 1">
+					<td>经纪人</td>
+					<elseif condition="$vo['r_id'] eq 2" />
+					<td>房源商</td>
+					<else/>
+					<td>机构</td>
+					</if>
+					<td><a href="{:U('Broker/delete',array('id'=>$vo['id']))}" class="J_ajax_del" >删除</a>/
+					<a href="{:U('Broker/mechanism',array('id'=>$vo['id']))}">设为机构</a>/
+					<a href="{:U('Broker/providers',array('id'=>$vo['id']))}">设为房源商</a></td>
+				</tr>
+			</foreach>
+		</table>
+	<div class="pagination">{$page}</div>
+	</div>
+<!-- 	<div class="form-actions">
+	<label class="checkbox inline" for="check_all"><input type="checkbox" class="J_check_all" data-direction="y" data-checklist="J_check_y" id="check_all">全选</label>                
+	<button class="btn btn-primary J_ajax_submit_btn" type="submit" data-action="{:u('Broker/delete')}" data-subcheck="true" data-msg="你确定删除吗？">删除</button>
+</div> -->
+</form>
+</div>
+<script src="__ROOT__/statics/js/common.js"></script>
+<script>
+	$('.btn').click(function() {
+		var keyword = $('input[name="keyword"]:text').val();
+		var reg =/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/;
+		if(!reg.test(keyword)){
+		    alert('手机号码不对！~');
+		}
+		$.ajax({
+		         type: "POST",
+		         url: "{:U('Broker/index')}",
+		         dataType:'text',
+		         data: {keyword:keyword},
+		         success: function(data){
+		      		
+		         	}
+	    	 });
+	})
+</script>
+</body>
+</html>

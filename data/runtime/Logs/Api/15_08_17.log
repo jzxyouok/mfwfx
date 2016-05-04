@@ -1,0 +1,18 @@
+[ 2015-08-17T12:54:55+08:00 ] 121.42.0.16 /api.php?act=../../robots.txt%00:template_info&api_version=1.0&app=12
+ERR: 无法加载控制器:Index
+
+[ 2015-08-17T12:56:57+08:00 ] 121.42.0.16 /api.php?op=get_menu&callback=conqu3r&act=ajax_getlist&cachefile=applist&path=admin%5C..%5C..%5Cphpsso_server%5Ccaches%5Ccaches_admin&parentid=0&key=authkey
+ERR: 无法加载控制器:Index
+
+[ 2015-08-17T12:58:24+08:00 ] 121.42.0.16 /api.php
+ERR: 无法加载控制器:Index
+
+[ 2015-08-17T13:01:29+08:00 ] 121.42.0.16 /index.php/api/xmlrpc
+ERR: 无法加载控制器:Xmlrpc
+
+[ 2015-08-17T13:04:41+08:00 ] 121.42.0.16 /api.php?act=search_sub_regions&api_version=1.0
+ERR: 无法加载控制器:Index
+
+[ 2015-08-17T13:04:42+08:00 ] 121.42.0.16 /api.php?act=get_spec_single&api_version=3.1
+ERR: 无法加载控制器:Index
+

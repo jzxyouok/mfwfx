@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>觅房网房产分销平台</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" href="__TMPL__Public/css/public.css" type="text/css">
+	<link rel="stylesheet" href="__TMPL__Public/css/fang.css" type="text/css">
+	<script type="text/javascript" src="__TMPL__Public/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="__TMPL__Public/js/main.js"></script>
+	</head>
+	<body>
+	<tc_include file="Public:nav" />
+		<ul id="so" class="mt10">
+			<div class="kh_content">经纪人总数为&nbsp;<span>{$count}</span>&nbsp;人</div>
+		</ul>
+	
+		<table id="yj_box" border="1" bordercolor="#cccccc" cellpadding="10"  >
+			<tbody>
+				<tr class="">
+					<th width="12%">经纪手机号</th>
+					<th width="12%">经纪人</th>
+					<th width="12%">性别</th>
+					<th width="12%">用户图像</th>
+					<th width="12%">状态</th>
+				</tr>
+			</tbody>
+			<foreach name="res" item="v">
+					<tr>
+						<td>{$v.loginname}</td>
+						<td>{$v.name}</td>
+						<if condition="$v['sex'] eq 1">
+						<td>男</td>
+						<else />
+						<td>女</td>
+						</if>
+						<td><img  width="50px" hight="50px" src="__TMPL__Public/images/{$v.img|default="member.gif"}" alt=""></td>
+						<td><a href="{:U('Broker/del',array('id'=>$v['id']))}">删除</a>/</td>
+					</tr>
+			</foreach>
+		</table>
+		    <!-- 分页-->
+	<div class="AspNetPager"><div class="paginator">{$page}</div></div>
+	<tc_include file="Public:footer" />	
+<script type="text/javascript">
+	$(function(){
+		
+		$(".menubar ul li").eq(2).addClass("active").siblings().removeClass("active");
+		
+	})
+</script>
+	</body>
+
+</html>

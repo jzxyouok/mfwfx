@@ -1,0 +1,46 @@
+		<div class="top layout clearfix">
+			<a href="index.html" class="fl"><img src="__TMPL__Public/images/logo.gif" alt=""></a>
+			<div class="btns fr">
+				<if condition="!empty($_SESSION['loginname'])" >
+					<div class="loginIn">
+						<a href="" id="username">{$Think.session.loginname}</a>
+						<div id="personMsg" style="display: none;">
+						<if condition="($_SESSION['r_id'] eq 1) OR empty($_SESSION['r_id'])">
+							<a target="_self" href="{:U('Myclient/index')}">我的客户</a>
+							<a target="_self" href="{:U('Commission/index')}">佣金结算</a>
+							<!-- <a target="_self" href="{:U('Index/home')}">经纪人中心</a> -->
+						<elseif condition="$_SESSION['r_id'] eq 2"/>
+							<a target="_self" href="{:U('Fang/index')}">我的房源</a>
+						<elseif condition="$_SESSION['r_id'] eq 3"/>
+							<a target="_self" href="{:U('Broker/index')}">我的经纪人</a>
+							<a target="_self" href="{:U('Broker/add')}">增加经纪人</a>
+						</if>
+						</div>
+						<a href="{:U('Login/logout')}">退出登录</a>
+					</div>
+				</if>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="layout menubar">
+				<ul>
+				<if condition="($_SESSION['r_id'] eq 1) OR empty($_SESSION['r_id'])">	
+					<li><a href="{:U('Index/index')}">首页</a></li>
+					<li><a href="{:U('Fxlp/index')}"  target="_self">分销楼盘</a></li>
+					<li><a href="{:U('Myclient/index')}" target="_self">我的客户</a></li>
+					<li><a href="{:U('Distribution/index')}" target="_self">分销规则</a></li>
+					<li><a href="{:U('Commission/index')}" target="_self">佣金结算</a></li>
+				<elseif condition="$_SESSION['r_id'] eq 2"/>
+					<li><a href="{:U('Index/index')}">首页</a></li>
+					<li><a href="{:U('Fxlp/index')}"  target="_self">分销楼盘</a></li>
+					<li><a href="{:U('Fang/index')}" target="_self">我的房源</a></li>
+					<li><a href="{:U('Distribution/index')}" target="_self">分销规则</a></li>
+				<elseif condition="$_SESSION['r_id'] eq 3"/>
+					<li><a href="{:U('Index/index')}">首页</a></li>
+					<li><a href="{:U('Fxlp/index')}"  target="_self">分销楼盘</a></li>
+					<li><a href="{:U('Broker/index')}" target="_self">我的经纪人</a></li>
+					<li><a href="{:U('Distribution/index')}" target="_self">分销规则</a></li>
+				</if>
+				</ul>
+			</div>
+		</div>

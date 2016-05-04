@@ -1,0 +1,7 @@
+[ 2015-07-10T09:34:10+08:00 ] 219.140.119.252 /index.php?g=&m=Login&a=reg_verify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001452s ]
+SQL: SHOW COLUMNS FROM `sp_fx_user` [ RunTime:0.0007s ]
+

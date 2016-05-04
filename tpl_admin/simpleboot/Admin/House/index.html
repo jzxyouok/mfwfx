@@ -1,0 +1,71 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+  <ul class="nav nav-tabs">
+     <li class="active"><a href="javascript:;">所有房源</a></li>
+     <li><a href="{:U('House/add')}"  target="_self">添加房源</a></li>
+  </ul>
+  <form class="J_ajaxForm" action="" method="post">
+    <div class="table_list">
+      <table width="100%" class="table table-hover">
+        <thead>
+	          <tr>
+	            <th width="16"><label><input type="checkbox" class="J_check_all" data-direction="x" data-checklist="J_check_x"></label></th>
+                  <th width="60">ID</th>
+	            <th width="60">楼盘名</th>
+	            <th width="70">楼盘地址</th>
+	            <th width="60">参考价</th>
+               	<th width="70">售楼电话</th>
+                	<th width="70">开盘时间</th>
+	            <th width="70">交房时间</th>
+	            <th width="40"><span>物业</span></th>
+	            <th width="70">装修情况</th>
+	            <th width="50">开发商</th>
+                  <th width="50">区域</th>
+                  <th width="50">佣金</th>
+                  <th width="50">状态</th>
+                  <th width="50">操作</th>
+	          </tr>
+        </thead>
+        	<foreach name="res" item="res">
+	        	<tr>
+		            <td><input type="checkbox" class="J_check" data-yid="J_check_y" data-xid="J_check_x" name="ids[]" value="{$res.ids}" ></td>
+		            <td>{$res.id}</td>
+		            <td><span>{$res.name}</span></td>
+		            <td>{$res.addr}</td>
+                        <td>{$res.aveprice}元</td>
+                        <td>{$res.tel}</td>
+		            <td>{$res.opentime|date='Y-m-d',###}</td>
+		            <td>{$res.roomtime|date='Y-m-d',###}</td>
+		            <td>{$res.propertytypes}</td>
+                        <td>{$res.redecorate}</td>
+                        <td>{$res.developer}</td>
+                        <td>{$res.city}</td>
+                        <td>{$res.num}</td>
+                        <td>
+                            <if condition="$res['status'] eq 00">
+                                  无效
+                                  <else />
+                                  有效
+                              </if>
+                        </td>
+		            <td>
+	            	<!-- <a href="{:U('House/edit',array('id'=>$res['id']))}">修改</a>| -->
+	            	<a href="{:U('House/delete',array('id'=>$res['id']))}" class="J_ajax_del" >删除</a>
+		            </td>
+	          	</tr>
+          </foreach>
+          </table>
+          <div class="pagination">{$Page}</div>
+    </div>
+    <div class="form-actions">
+        <label class="checkbox inline" for="check_all"><input type="checkbox" class="J_check_all" data-direction="y" data-checklist="J_check_y" id="check_all">全选</label>                
+        <!-- <button class="btn btn-primary J_ajax_submit_btn" type="submit" data-action="{:u('House/check',array('status'=>01))}" data-subcheck="true">审核</button>
+        <button class="btn btn-primary J_ajax_submit_btn" type="submit" data-action="{:u('House/check',array('unstatus'=>00))}" data-subcheck="true">取消审核</button> -->
+        <button class="btn btn-primary J_ajax_submit_btn" type="submit" data-action="{:u('House/delete')}" data-subcheck="true" data-msg="你确定删除吗？">删除</button>
+    </div>
+  </form>
+</div>
+<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

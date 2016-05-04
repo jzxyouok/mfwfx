@@ -1,0 +1,23 @@
+<admintpl file="header"/>
+<body class="J_scroll_fixed">
+<div class="wrap jj">
+  <ul class="nav nav-tabs">
+      <li><a href="{:U('Institution/modInst')}">机构修改</a></li>
+      <li class="active"><a href="{:U('Institution/addInst')}">增加机构</a></li>
+  </ul>
+  <div class="common-form">
+    <form method="post" class="J_ajaxForm" action="{:U('Institution/doAdd')}">
+            <div class="table_list">
+			<span>机构代码：</span><input type='text' name='code'><br/>
+			<span>机构名称：</span><input type='text' name='outfit'><br/>
+                   <!-- <span>所属用户：</span><input type='text' name='u_id'><br/> -->
+			<span>机构级别：</span><input type='text' name='level'><br/>
+			<span>机构备注：</span><textarea name='desc' cols='20' rows='5'></textarea><br/>
+			<input type='submit' value='添加机构'>
+  		</div>
+    </form>
+  </div>
+</div>
+<script src="__ROOT__/statics/js/common.js?"></script>
+</body>
+</html>

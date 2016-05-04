@@ -1,0 +1,272 @@
+<admintpl file="header"/>
+<script type="text/javascript">
+    var catid = "12";
+</script>
+<style type="text/css">
+.col-auto {
+	overflow: hidden;
+	_zoom: 1;
+	_float: left;
+	border: 1px solid #c2d1d8;
+}
+.col-right {
+	float: right;
+	width: 210px;
+	overflow: hidden;
+	margin-left: 6px;
+	border: 1px solid #c2d1d8;
+}
+
+body fieldset {
+	border: 1px solid #D8D8D8;
+	padding: 10px;
+	background-color: #FFF;
+}
+body fieldset legend {
+    background-color: #F9F9F9;
+    border: 1px solid #D8D8D8;
+    font-weight: 700;
+    padding: 3px 8px;
+}
+.list-dot{ padding-bottom:10px}
+.list-dot li,.list-dot-othors li{padding:5px 0; border-bottom:1px dotted #c6dde0; font-family:"宋体"; color:#bbb; position:relative;_height:22px}
+.list-dot li span,.list-dot-othors li span{color:#004499}
+.list-dot li a.close span,.list-dot-othors li a.close span{display:none}
+.list-dot li a.close,.list-dot-othors li a.close{ background: url("__ROOT__/statics/images/cross.png") no-repeat left 3px; display:block; width:16px; height:16px;position: absolute;outline:none;right:5px; bottom:5px}
+.list-dot li a.close:hover,.list-dot-othors li a.close:hover{background-position: left -46px}
+.list-dot-othors li{float:left;width:24%;overflow:hidden;}
+</style>
+</head>
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+  <ul class="nav nav-tabs">
+     <li><a href="{:U('House/index')}">所有房源</a></li>
+     <li class="active"><a href="{:U('House/add')}"  target="_self">添加房源</a></li>
+  </ul>
+  <form name="myform" id="myform" action="{:u('House/post')}" method="post" class="form-horizontal J_ajaxForms" enctype="multipart/form-data">
+  <div class="col-right">
+    <div class="table_full">
+      <table width="100%">
+         <tr>
+          <td><b>房源缩略图</b></td>
+        </tr>
+        <tr>
+          <td>
+          	<div  style="text-align: center;"><input type='hidden' name='picture_dir' id='thumb' value=''>
+			<a href='javascript:void(0);' onclick="flashupload('thumb_images', '附件上传','thumb',thumb_images,'1,jpg|jpeg|gif|png|bmp,1,,,1','','','');return false;">
+			<img src='__ROOT__/statics/images/icon/upload-pic.png' id='thumb_preview' width='135' height='113' style='cursor:hand' /></a>
+			<!-- <input type="button" class="btn" onclick="crop_cut_thumb($('#thumb').val());return false;" value="裁减图片">  -->
+            <input type="button"  class="btn" onclick="$('#thumb_preview').attr('src','__ROOT__/statics/images/icon/upload-pic.png');$('#thumb').val('');return false;" value="取消图片">
+            </div>
+			</td>
+        </tr>
+        <tr>
+          <td><b>状态</b></td>
+        </tr>
+        <tr>
+          	<td>
+	          	<span class="switch_list cc">
+			<label><input type="radio" name="status" value="01" checked><span>审核通过</span></label>
+			<label><input type="radio" name="status" value="00"  ><span>待审核</span></label>
+	 	</span>
+	</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="col-auto">
+    <div class="table_full">
+      <table width="100%" cellpadding="2" cellspacing="2">
+            <tr>
+              <th width="80">房源标题 </th>
+              <td>
+              	<input type="text" style="width:400px;" name="name" id="title"  required value="" style="color:" class="input input_hd J_title_color" placeholder="请输入房源标题" onkeyup="strlen_verify(this, 'title_len', 160)" />
+              	<span class="must_red">*</span>
+              </td>
+            </tr>
+             <tr>
+              <th width="80">所属机构 </th>
+              <td>
+              	<foreach item="outfit" name="outfit">
+            		 <label><input type="radio" name="outfit_id" value="{$outfit.code}"  ><span>{$outfit.outfit}</span></label>
+            	</foreach>
+              </td>
+            </tr>
+             <tr>
+              <th width="80">所属分销商ID</th>
+             <td>
+              <input type="text" style="width:400px;" name="distributor_id" id="title"  required value="" style="color:" class="input input_hd J_title_color" placeholder="请输入分销商ID" onkeyup="strlen_verify(this, 'title_len', 160)" />
+                <span class="must_red">*</span>
+             </td>
+            </tr>
+            <tr>
+              <th width="80">所属物业</th>
+             <td>
+              <input type="text" style="width:400px;" name="property" id="title"  required value="" style="color:" class="input input_hd J_title_color" placeholder="请输入物业公司" onkeyup="strlen_verify(this, 'title_len', 160)" />
+                <span class="must_red">*</span>
+             </td>
+            </tr>
+             <tr>
+              <th width="80">楼层描述</th>
+             <td>
+              <input type="text" style="width:400px;" name="floor" id="title"  required value="" style="color:" class="input input_hd J_title_color" placeholder="请输入楼层描述" onkeyup="strlen_verify(this, 'title_len', 160)" />
+                <span class="must_red">*</span>
+             </td>
+            </tr>
+            <tr>
+              <th width="80">房子属性</th>
+             <td>
+              <input type="text" style="width:400px;" name="attribute" id="title"  required value="" style="color:" class="input input_hd J_title_color" placeholder="请输入房子属性（商品房）" onkeyup="strlen_verify(this, 'title_len', 160)" />
+                <span class="must_red">*</span>
+             </td>
+            </tr>
+            <tr>
+              <th width="80">房子卖点</th>
+             <td>
+              <input type="text" style="width:400px;" name="selling" id="title"  required value="" style="color:" class="input input_hd J_title_color" placeholder="请输入房子卖点" onkeyup="strlen_verify(this, 'title_len', 160)" />
+                <span class="must_red">*</span>
+             </td>
+            </tr>
+            <tr>
+              <th width="80">优惠价格</th>
+             <td>
+              <input type="text" style="width:400px;" name="discount" id="title"  required value="" style="color:" class="input input_hd J_title_color" placeholder="请输入优惠价格多少元" onkeyup="strlen_verify(this, 'title_len', 160)" />
+                <span class="must_red">*</span>
+             </td>
+            </tr>
+            <tr>
+              <th width="80">佣金规则</th>
+             <td>
+              <input type="text" style="width:400px;" name="commission_rule" id="title"  required value="" style="color:" class="input input_hd J_title_color" placeholder="请输入佣金规则（成交第一套2000元，成交第二套3000元，成交第三套4000元）" onkeyup="strlen_verify(this, 'title_len', 160)" />
+                <span class="must_red">*</span>
+             </td>
+            </tr>
+            <tr>
+              <th width="80">房源地址</th>
+             <td>
+             	<input type="text" style="width:400px;" name="addr" id="title"  required value="" style="color:" class="input input_hd J_title_color" placeholder="请输入房源地址" onkeyup="strlen_verify(this, 'title_len', 160)" />
+              	<span class="must_red">*</span>
+             </td>
+            </tr>
+            <tr>
+              <th width="80">房源均价</th>
+             <td>
+             	<input type="text" style="width:400px;" name="aveprice" id="title"  required value="" style="color:" class="input input_hd J_title_color" placeholder="请输入房源均价" onkeyup="strlen_verify(this, 'title_len', 10)" />
+              	<span class="must_red">元*</span>
+             </td>
+            </tr>
+ 	<tr>
+              <th width="80">房源电话</th>
+             <td>
+             	<input type="text" style="width:400px;" name="tel" id="title"  required value="" style="color:" class="input input_hd J_title_color" placeholder="请输入房源电话" onkeyup="strlen_verify(this, 'title_len', 10)" />
+              	<span class="must_red">*</span>
+             </td>
+            </tr>
+             <tr>
+              <th width="80">开盘时间</th>
+             <td>
+             <input type="date" style="width:400px;" name="opentime" id="title"  required value="" style="color:" class="input input_hd J_title_color" />
+              <span class="must_red">*</span>
+             </td>
+            </tr>
+            <tr>
+             <th width="80">截止时间</th>
+             <td>
+             <input type="date" style="width:400px;" name="roomtime" id="title"  required value="" style="color:" class="input input_hd J_title_color" />
+              <span class="must_red">*</span>
+             </td>
+            </tr>
+             <tr>
+             <th width="80">物业类型</th>
+             <td>
+             	<input type="text" style="width:400px;" name="propertytypes" id="title"  required value="" style="color:" class="input input_hd J_title_color" placeholder="请输入物业类型" onkeyup="strlen_verify(this, 'title_len', 160)" />
+              	<span class="must_red">*</span>
+             </td>
+            </tr>  
+             <tr>
+             <th width="80">装修情况</th>
+             <td>
+             	<input type="text" style="width:400px;" name="redecorate" id="title"  required value="" style="color:" class="input input_hd J_title_color" placeholder="请输入装修情况" onkeyup="strlen_verify(this, 'title_len', 160)" />
+              	<span class="must_red">*</span>
+             </td>
+            </tr>  
+             <tr>
+             <th width="80">开发商</th>
+             <td>
+             	<input type="text" style="width:400px;" name="developer" id="title"  required value="" style="color:" class="input input_hd J_title_color" placeholder="请输入开发商" onkeyup="strlen_verify(this, 'title_len', 160)" />
+              	<span class="must_red">*</span>
+             </td>
+            </tr> 
+             <tr>
+             <th width="80">区域</th>
+             <td>
+             	<input type="text" style="width:400px;" name="city" id="title"  required value="" style="color:" class="input input_hd J_title_color" placeholder="请输入所属区域" onkeyup="strlen_verify(this, 'title_len', 160)" />
+              	<span class="must_red">*</span>
+             </td>
+            </tr>     
+            <tr>
+             <th width="80">房源佣金</th>
+             <td>
+             	<input type="text" style="width:400px;" name="num" id="title"  required value="" style="color:" class="input input_hd J_title_color" placeholder="请输入房源佣金" onkeyup="strlen_verify(this, 'title_len', 160)" />
+              	<span class="must_red">*</span>
+             </td>
+            </tr>                 
+            <tr>
+              <th width="80">房源相册图集 </th>
+              <td>
+		<fieldset class="blue pad-10">
+		        <legend>房源户型图</legend>
+		        <ul id="photos" class="picList"></ul>
+		</fieldset>
+		<div class="bk10"></div>
+		<a href='javascript:void(0);' onclick="javascript:flashupload('albums_images', '图片上传','photos',change_images,'10,gif|jpg|jpeg|png|bmp,0','','','')" class="btn">选择图片 </a> </td>
+            </tr>
+            <tr>
+              <th width="80">楼盘相册图集 </th>
+              <td>
+              <fieldset class="blue pad-10">
+                <legend>楼盘相册</legend>
+                <ul id="img" class="picList"></ul>
+              </fieldset>
+              <div class="bk10"></div>
+              <a href='javascript:void(0);' onclick="javascript:flashupload('albums_images', '图片上传','img',change_images,'10,gif|jpg|jpeg|png|bmp,0','','','')" class="btn">选择图片 </a> </td>
+            </tr>     
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="form-actions">
+        <button class="btn btn_submit J_ajax_submit_btn"type="submit">提交</button>
+        <a class="btn" href="{:U('House/index')}">返回</a>
+  </div>
+ </form>
+</div>
+<script type="text/javascript" src="__ROOT__/statics/js/common.js"></script>
+<script type="text/javascript" src="__ROOT__/statics/js/content_addtop.js"></script>
+<script type="text/javascript"> 
+$(function () {
+	//setInterval(function(){public_lock_renewal();}, 10000);
+	$(".J_ajax_close_btn").on('click', function (e) {
+	    e.preventDefault();
+	    Wind.use("artDialog", function () {
+	        art.dialog({
+	            id: "question",
+	            icon: "question",
+	            fixed: true,
+	            lock: true,
+	            background: "#CCCCCC",
+	            opacity: 0,
+	            content: "您确定需要关闭当前页面嘛？",
+	            ok:function(){
+					setCookie("refersh_time",1);
+					window.close();
+					return true;
+				}
+	        });
+	    });
+	});
+	
+});
+</script>
+</body>
+</html>

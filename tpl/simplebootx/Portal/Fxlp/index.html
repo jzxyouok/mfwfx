@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>觅房网房产分销平台</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" href="__TMPL__Public/css/public.css" type="text/css">
+	<link rel="stylesheet" href="__TMPL__Public/css/main.css" type="text/css">
+	<script type="text/javascript" src="__TMPL__Public/js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+	<tc_include file="Public:nav" />
+	<!-- //正文开始 -->
+	<div class="layout ">
+		<div class="box mt15">
+			<ul class="innerBox">
+				<li class="clearfix">
+					<span class="fl tt">选择区域：&nbsp;&nbsp;</span>
+					<p class="region fl">
+						<span>
+							<a href="{:U('Fxlp/index')}">不限</a>
+						</span>
+						<span>
+							<a href="{:U('Fxlp/index',array('qy'=>'武昌区'))}">武昌区</a>
+						</span>
+						<span>
+							<a href="{:U('Fxlp/index',array('qy'=>'江岸区'))}">江岸区</a>
+						</span>
+						<span>
+							<a href="{:U('Fxlp/index',array('qy'=>'江汉区'))}">江汉区</a>
+						</span>
+						<span>
+							<a href="{:U('Fxlp/index',array('qy'=>'硚口区'))}">硚口区</a>
+						</span>
+						<span>
+							<a href="{:U('Fxlp/index',array('qy'=>'汉阳区'))}">汉阳区</a>
+						</span>
+						<span>
+							<a href="{:U('Fxlp/index',array('qy'=>'洪山区'))}">洪山区</a>
+						</span>
+						<span>
+							<a href="{:U('Fxlp/index',array('qy'=>'青山区'))}">青山区</a>
+						</span>
+						<span>
+							<a href="{:U('Fxlp/index',array('qy'=>'东西湖区'))}">东西湖区</a>
+						</span>
+						<span>
+							<a href="{:U('Fxlp/index',array('qy'=>'蔡甸区'))}">蔡甸区</a>
+						</span>
+						<span>
+							<a href="{:U('Fxlp/index',array('qy'=>'江夏区'))}">江夏区</a>
+						</span>
+						<span>
+							<a href="{:U('Fxlp/index',array('qy'=>'黄陂区'))}">黄陂区</a>
+						</span>
+						<span>
+							<a href="{:U('Fxlp/index',array('qy'=>'新洲区'))}">新洲区</a>
+						</span>
+					</p>
+				</li>
+				<li class="space"></li>
+				<li>
+					<div class="inputBox">
+					<form action="{:U('Fxlp/index',array('so'=>1,'qy'=>2))}" method="post"  id="_form">	
+						<input type="text" name="soss" class="keywords" placeholder="请输入楼盘名" onfocus="if(this.value=='请输入楼盘名') this.value='';"onblur="if(this.value=='') this.value='请输入楼盘名'; this.blur(); ">
+	                       	 			<button class="check" onclick="document.getElementById('_form').submit();"></button>
+	                       	 		</form>
+	                       	 		</div>
+		                        	</li>
+	                        </ul>
+		</div>
+		<!-- 内容排序-->
+		<div class="rank mt15">
+			<ul class="title">
+				<li>默认排序</li>
+				<li class="active so2">佣金
+					<span class=" down">
+						<img src="__TMPL__Public/images/top_arr.png" alt="">
+					</span>
+				</li >
+				<li class="so3">最热
+					<span class="up">
+						<img src="__TMPL__Public/images/down_arr.png" alt="">
+					</span>
+				</li>
+				<li class="so4">最新
+					<span class="down">
+						<img src="__TMPL__Public/images/down_arr.png" alt="">
+					</span>
+				</li>
+			</ul>
+			<ul class="houses">
+			<foreach name="fang" item="vo">
+				<li>
+					<a href="#" class="viewImg">
+						<img src="{$vo.picture_dir|default='./data/upload/556273ce4d120.png'}" alt="" width="352px" height="221px">
+					</a>
+					<div class="right">
+						<div class="name">{$vo.name}</div>
+						<p>优惠价格：<em>{$vo.discount}</em>元/平米</p>
+						<p>市场价格：<em>{$vo.aveprice}</em>元/平米</p>
+						<p>楼盘位置：<span>【{$vo.city}】</span>{$vo.addr}</p>
+						<p>截止日期：{$vo.roomtime|date="Y-m-d",###}</p>
+						<p>
+							<a href="javasctipt:void(0)
+							" class="recomBtn">
+							<img src="__TMPL__Public/images/recomBtn.png" alt=""></a>
+							<span><em>{$vo.involved}</em>人推荐</span>
+						</p>
+						<p class="countTime">
+							<span>
+								<img src="__TMPL__Public/images/timer.png" alt="">
+							</span>
+							<em class="roomtime">{$vo.roomtime}</em>
+                						<em class='datedown'></em>
+						</p>
+						<div class="knowDetail">
+							<a href="{:U('Fxlp/fxlist',array('id'=>$vo['id']))}">
+							<span class="know_1">了解详情</span>
+							<span class="know_2">￥<em>{$vo.num}</em>/套(佣金)</span></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+			</foreach>
+			</ul>
+		</div>
+<!-- 分页-->
+		<div class="AspNetPager">
+			<div class="paginator">
+				{$page}
+			</div>
+		</div>
+
+	</div>
+<!-- 底部 -->
+<tc_include file="Public:footer" />
+	<div id="bg" style=""></div>
+	<div id="tj" style="top: 30%;">
+		<ul id="tit">
+			<a href="javascript:void(0);" target="_top">X</a>
+			<li class="c">推荐新客户</li>
+		</ul>
+	<if condition="empty($_SESSION['loginname'])" >
+	<div class="tj_box no_dl show">
+		您还未登陆，请先<a href="{:U('Login/login')}">登录</a>或者<a href="{:U('Login/reg')}" class="btn2">免费注册</a>
+	</div> 
+	<else />
+	<div class="tj_box" id="tj_box0">
+	<form action="" method="post" id="_form">
+	<div class="debug"></div>
+		<dl>
+			<dt><i style="color:red">*&nbsp;&nbsp;</i>姓名</dt>
+			<dd><input type="text" class="txt" id="cname" name="name"><span style="color:red">姓名不能为空</span></dd>
+		</dl>
+		<dl>
+			<dt><i style="color:red">*&nbsp;&nbsp;</i>手机</dt>
+			<dd><input type="text" class="txt" id="mobile" maxlength="11" name="tel"><span style="color:red">请输入正确的手机号</span></dd>
+
+		</dl>
+		<dl>
+			<dt>区域</dt>
+			<dd><input type="text" class="txt" id="region" readonly="" name="city"  ></dd>
+		</dl>
+		<dl>
+			<dt>意向楼盘</dt>
+			<dd><input type="text" class="txt" id="lpname" readonly="" name="buliding"></dd>
+		</dl>
+<!-- 			<ul class="tab-list" style="z-index: 10; display: none;" id="foot_search_ul"></ul>
+		<dl id="more">补充更多信息<i class=""></i></dl> -->
+	<!-- <div class="tj_ct hide" style="display: none;"> -->
+		<dl>
+			<dt>性别</dt>
+			<dd>
+				<label for="s1"><input type="radio" value="1" id="s1" name="sex" checked="checked">男</label>
+				<label for="s2"><input type="radio" value="2" id="s2" name="sex">女</label>
+			</dd>
+		</dl>       
+		<dl>
+			<dt>意向户型</dt>
+			<dd>
+				<label for="hx1"><input type="radio" value="一室" id="hx1" name="house">一室</label>
+				<label for="hx2"><input type="radio" value="二室" id="hx2" name="house" >二室</label>
+				<label for="hx3"><input type="radio" value="三室" id="hx3" name="house" checked="checked">三室</label>
+				<label for="hx4"><input type="radio" value="四室" id="hx4" name="house">四室</label>
+				<label for="hx5"><input type="radio" value="五室" id="hx5" name="house">五室</label>
+			</dd>
+		</dl>     
+		<dl>
+			<dt>意向面积</dt>
+			<dd><input type="text" class="txt" id="area" name="area">/平方米&nbsp;&nbsp;&nbsp;<span style="color:red">请填写数字</span></dd>
+		</dl>    
+		<dl>
+			<dt>意向价格</dt>
+			<dd><input type="text" class="txt" id="price" name="price">万元&nbsp;&nbsp;&nbsp;<span style="color:red">请填写数字</span></dd>
+		</dl>                    
+	<!-- </div> -->
+		<dl>
+			<input type="hidden" name="a_id" value="{$Think.session.id}" id="a_id" >
+			<a href="javascript:void(0);"  class="btn" id="addclient">提交推荐信息</a>
+		</dl>
+	</form>
+	</div>
+	</if>
+	</div>
+<script type="text/javascript">
+	$(function(){
+	// tab标签切换
+	$(".rank ul.title li").click(function(){
+		$(this).children().children().attr("src","/tpl/simplebootx/Public/images/top_arr.png");
+		$(this).siblings().children().children().attr("src","/tpl/simplebootx/Public/images/down_arr.png");
+	});
+	
+//最新最热ajax
+	$(".so2").bind("click",function(){
+		var href = "{:U('Fxlp/so')}";
+		var href1 =  "{:U('Fxlp/fxlist')}";
+		$.post(
+			href,
+			function(data){
+				str = "";
+				for(var i = 0, j = data.length;i<j;i++){
+					str += '<li><a href="#" class="viewImg"><img src="'+data[i].picture_dir+'" alt="" width="352px" height="221px"></a><div class="right"><div class="name">'+data[i].name+'</div><p>优惠价格：<em>'+data[i].discount+'</em>元/平米</p><p>市场价格：<em>'+data[i].aveprice+'</em>元/平米</p><p>楼盘位置：<span>【'+data[i].city+'】</span>'+data[i].addr+'</p><p>开盘日期：'+getLocalTime(data[i].opentime)+'</p><p><a href="javasctipt:void(0)" class="recomBtn"><img src="__TMPL__Public/images/recomBtn.png" alt=""></a><span><em>'+data[i].involved+'</em>人推荐</span></p><p class="countTime"><span><img src="__TMPL__Public/images/timer.png" alt=""></span><em class="roomtime" style="display:none;">'+data[i].roomtime+'</em><em class="datedown"></em></p><div class="knowDetail"><a href="'+href1+'&id='+data[i].id+'"><span class="know_1">了解详情</span><span class="know_2">￥<em>'+data[i].num+'</em>/套(佣金)</span></a></div><div class="clear"></div></div></li>';	
+					//alert(data[i]['picture_dir']);			
+				}
+				$('.houses').html('');
+				$('.houses').html(str);
+			},
+			"json"
+		);
+	})
+
+	//最新最热ajax
+	$(".so3").bind("click",function(){
+		var href = "{:U('Fxlp/hot')}";
+		var href1 =  "{:U('Fxlp/fxlist')}";
+		$.post(
+			href,
+			function(data){
+				str = "";
+				for(var i = 0, j = data.length;i<j;i++){
+					str += '<li style="background: rgb(255, 255, 255);"><a href="#" class="viewImg"><img src="'+data[i].picture_dir+'" alt="" width="352px" height="221px"></a><div class="right"><div class="name">'+data[i].name+'</div><p>优惠价格：<em>'+data[i].discount+'</em>元/平米</p><p>市场价格：<em>'+data[i].aveprice+'</em>元/平米</p><p>楼盘位置：<span>【'+data[i].city+'】</span>'+data[i].addr+'</p><p>开盘日期：'+getLocalTime(data[i].opentime)+'</p><p><a href="javasctipt:void(0)" class="recomBtn"><img src="__TMPL__Public/images/recomBtn.png" alt=""></a><span><em>'+data[i].involved+'</em>人推荐</span></p><p class="countTime"><span><img src="__TMPL__Public/images/timer.png" alt=""></span><em class="roomtime" style="display:none;">'+data[i].roomtime+'</em><em class="datedown"></em></p><div class="knowDetail"><a href="'+href1+'&id='+data[i].id+'"><span class="know_1">了解详情</span><span class="know_2">￥<em>'+data[i].num+'</em>/套(佣金)</span></a></div><div class="clear"></div></div></li>';	
+					//alert(data[i]['picture_dir']);			
+				}
+				$('.houses').html('');
+				$('.houses').html(str);
+			},
+			"json"
+		);
+	})
+	//最新最热ajax
+	$(".so4").bind("click",function(){
+		var href = "{:U('Fxlp/news')}";
+		var href1 =  "{:U('Fxlp/fxlist')}";
+		$.post(
+			href,
+			function(data){
+				str = "";
+				for(var i = 0, j = data.length;i<j;i++){
+					str += '<li><a href="#" class="viewImg"><img src="'+data[i].picture_dir+'" alt="" width="352px" height="221px"></a><div class="right"><div class="name">'+data[i].name+'</div><p>优惠价格：<em>'+data[i].discount+'</em>元/平米</p><p>市场价格：<em>'+data[i].aveprice+'</em>元/平米</p><p>楼盘位置：<span>【'+data[i].city+'】</span>'+data[i].addr+'</p><p>开盘日期：'+getLocalTime(data[i].opentime)+'</p><p><a href="javasctipt:void(0)" class="recomBtn"><img src="__TMPL__Public/images/recomBtn.png" alt=""></a><span><em>'+data[i].involved+'</em>人推荐</span></p><p class="countTime"><span><img src="__TMPL__Public/images/timer.png" alt=""></span><em class="roomtime" style="display:none;">'+data[i].roomtime+'</em><em class="datedown"></em></p><div class="knowDetail"><a href="'+href1+'&id='+data[i].id+'"><span class="know_1">了解详情</span><span class="know_2">￥<em>'+data[i].num+'</em>/套(佣金)</span></a></div><div class="clear"></div></div></li>';	
+					//alert(data[i]['picture_dir']);			
+				}
+				$('.houses').html('');
+				$('.houses').html(str);
+			},
+			"json"
+		);
+	})
+	
+	function getLocalTime(nS) {     
+	   return new Date(parseInt(nS) * 1000).toLocaleString().replace(/:\d{1,2}$/,' ');     
+	}
+
+			$(".menubar ul li").eq(0).addClass("active").siblings().removeClass("active");
+
+
+		$(".recomBtn").live("click",function(){
+			$("#bg,#tj").show();
+			 var houseName=$(this).parents(".right").find(".name").text();
+			
+ 			$("#lpname").val(houseName);
+ 			var region=$(this).parents(".right").find("p").eq(2).children("span").text().split("【");
+ 			$("#region").val(region[1].substr(0,region[1].length-1));
+
+		});
+		
+		$("#tit a").click(function(){
+			$("#bg,#tj").hide();
+		});
+		$("#more").click(function(){
+			$(".tj_ct").toggle();
+		});
+
+	$(".recomBtn").click(function(){
+		var Tend = $(this).parent().next(".countTime").children(".datedown").html();
+		if( Tend =="活动已结束"){
+			alert("活动已结束!");
+			return false;
+			// e.preventDefault();
+		}	
+	})
+  
+	$("#area").change(function(){
+			var txt=$(this).val();
+			if(txt.length>0&&(/^[0-9]*$/.test(txt))){
+			$(this).next("span").hide();
+			 return true;
+		} else{	
+			$(this).next("span").show(); 
+			 return false;	
+		}
+	});
+	$("#price").change(function(){
+			var txt=$(this).val();
+			if(txt.length>0&&(/^[0-9]*$/.test(txt))){
+			$(this).next("span").hide();
+				 return true;
+		} else{	
+			 $(this).next("span").show(); 	
+			 return false;
+		}
+	});
+
+	 $("#cname").change(function(){
+			var txt=$(this).val();
+			if(txt.length>0){
+			$(this).next("span").hide();
+				 return true;
+		} else{	
+			 $(this).next("span").show(); 	
+			 return false;
+		}
+	});
+ 	$("#mobile").change(function(){
+			var txt=$(this).val();
+			if(txt.length>0&&(/^(1){1}[0-9]{10}$/.test(txt))){
+			$(this).next("span").hide();
+				 return true;
+		} else{	
+			 $(this).next("span").show(); 	
+			 return false;
+		}
+	});
+
+	//提交信息
+	$('#addclient').click(function(){
+			var name = $("#cname").val();
+			var tel = $('#mobile').val();
+			var city  = $('#region').val();
+			var buliding = $('#lpname').val();
+			var area = $('#area').val();
+			var price =$('#price').val();
+			var a_id = $('#a_id').val();
+			var sex =($('input[name="sex"]:checked').val());
+			var house =($('input[name="house"]:checked').val());
+		$.ajax({
+		         type: "POST",
+		         url: "{:U('Index/dosave')}",
+		         dataType:'text',
+		         data: {name:name,sex:sex,house:house,area:area,price:price,tel:tel,city:city,buliding:buliding,a_id:a_id,},
+		         success: function(data){
+			       alert(data);
+			       $('#tj,#bg').hide();
+		         	}
+		     });
+	});
+
+	/*倒计时*/
+
+	function update(){
+		var now = new Date();
+		var nowTimes = now.getTime();
+		var years = document.getElementsByClassName('roomtime');
+		var datedowns = document.getElementsByClassName('datedown');
+	            for(var i=0;i<years.length;i++){
+	            	//datedowns[i].innerHTML = Math.floor(nowTimes/1000);
+	            	var leftsecond = parseInt((years[i].innerHTML-Math.floor(nowTimes/1000)));
+	            	var day1=Math.floor(leftsecond/(3600*24)); 
+	   	 	var hour=Math.floor((leftsecond-day1*24*60*60)/3600); 
+	   	 	var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); 
+	   	 	var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); 
+	            	//years[i].innerHTML = (nowTimes-years[i].innerHTML);
+	            	if(day1<=0){
+			        var string = "活动已结束";
+
+			}else{
+			        var string = "距离活动结束时间还有:"+day1+"天"+hour+"小时"+minute+"分"+second+"秒";
+
+			}
+	            	datedowns[i].innerHTML =string;
+	            }
+	}
+
+	window.onload=function(){
+	    $(".roomtime").hide();
+	};
+	window.setInterval(update,1000);
+});
+</script>
+<script src="__TMPL__Public/js/main.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".menubar ul li").eq(1).addClass("active").siblings().removeClass("active");
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<admintpl file="header"/>
+<body class="J_scroll_fixed">
+<div class="wrap jj">
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="{:U('Institution/modInst',array('id'=>$results['id']))}">机构修改</a></li>
+  </ul>
+  <div class="common-form">
+    <form method="post" class="J_ajaxForm" action="{:U('Institution/doMod')}">
+      <div class="table_list">
+			<input type='hidden' name='id' value="{$results.id}">
+			<span>机构代码：</span><input type='text' name='code' value="{$results.code}"><br/>
+			<span>机构名称：</span><input type='text' name='outfit' value="{$results.outfit}"><br/>
+			<span>机构级别：</span><input type='text' name='level' value="{$results.level}"><br/>
+			<span>机构备注：</span><textarea name='desc'   cols='15' rows='5'>{$results.desc}</textarea><br/>
+			<span>机构状态：</span><input type='text' name='status' value="{$results.status}"><br/>
+			<span>创建时间：</span>{$results.create_time}<br/>
+			<input type='submit' value='修改'>
+  		</div>
+    </form>
+  </div>
+</div>
+<script src="__ROOT__/statics/js/common.js?"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<admintpl file="header"/>
+<body class="J_scroll_fixed">
+<div class="wrap jj">
+  <ul class="nav nav-tabs">
+     <li class="active"><a href="{:U('Money/client')}">经纪人客户</a></li>
+  </ul>
+  <div class="common-form">
+      <div class="table_list">
+	    <table width="100%" class="table table-hover">
+	        <thead>
+	          <tr>
+	            <th width="5%">ID</th>
+	            <th width="200">客户名称</th>
+	            <th width="200">电话</th>
+	            <th width="200">性别</th>
+	            <th width="200">楼盘区域</th>
+	            <th width="200">意向房型</th>
+	            <th width="200">意向面积</th>
+	            <th width="200">意向价位</th>
+	            <th width="200">意向楼盘</th>
+	            <th width="200">修改状态</th>
+	            <th width="200">成交状态</th>
+	            <th >发放金额</th>
+	            <th width="10%">操作</th>
+	          </tr>
+	        </thead>
+	        <tbody>
+	        	<foreach name="customer" item="vo">
+	        	<tr>
+		            <td>{$vo.id}</td>
+		            <td>{$vo.name}</td>
+		            <td>{$vo.tel}</td>
+			<if condition = "$vo['sex'] eq '1'">
+			<td>男</td>
+			<else/>
+			<td>女</td>
+			</if>
+		            <td>{$vo.house}</td>
+		            <td>{$vo.house}</td>
+		            <td>{$vo.area}M<sup>2</sup></td>
+		            <td>&yen;{$vo.price}万元</td>
+		            <td>{$vo.buliding}</td>
+				<if condition="$vo['status'] eq 01">
+			<td>
+				<select name="s_id" class="s_id" >
+					<option value="1" <if condition="$vo['s_id'] eq 1"> selected='selected'</if>>待审核</option>
+					<option value="2" <if condition="$vo['s_id'] eq 2"> selected='selected'</if>>待预约</option>
+					<option value="3" <if condition="$vo['s_id'] eq 3"> selected='selected'</if>>待到访</option>
+					<option value="4" <if condition="$vo['s_id'] eq 4"> selected='selected'</if>>待认筹</option>
+					<option value="5" <if condition="$vo['s_id'] eq 5"> selected='selected'</if>>待认购</option>
+					<option value="6" <if condition="$vo['s_id'] eq 6"> selected='selected'</if>>待签约</option>
+					<option value="7" <if condition="$vo['s_id'] eq 7"> selected='selected'</if>>待结佣<o/option>
+					<option value="8" <if condition="$vo['s_id'] eq 8"> selected='selected'</if>>已结佣<o/option>
+				</select>
+			</td>
+				<else />
+					<td>已发放</td>
+				</if>
+			<if condition="$vo['status'] eq 01">
+		            <if condition="($vo['s_id'] eq 1)">
+						<td>待审核</td>
+			<elseif condition="$vo['s_id'] eq 2" />
+			<!-- s_id为用户带看状态1.待预约2待到访3待认筹4待认购5待签约6待结佣 7待结佣 -->
+						<td>待预约</td>
+			<elseif condition="$vo['s_id'] eq 3" />
+						<td>待到访</td>
+			<elseif condition="$vo['s_id'] eq 4" />
+						<td>待认筹</td>
+			<elseif condition="$vo['s_id'] eq 5" />
+						<td>待认购</td>
+			 <elseif condition="$vo['s_id'] eq 6" />     
+						<td>待签约</td>      
+			 <elseif condition="$vo['s_id'] eq 7" /> 
+						<td>待结佣</td>    
+		   	<elseif condition="$vo['rstutas'] eq 1" /> 
+						<td>已终结</td>   
+			</if>    
+			<else/>
+			<td>已发放</td>
+			</if>     
+			 <td><input type="text" name="num" class="textnum"/></td>
+		            <td>
+			            <a href="{:U('Money/delclient',array('id'=>$vo['id']))}">删除</a>/
+				<a href="{:U('Money/fmoney',array('id'=>$vo['id']))}" class="num">发放佣金</a>
+			</td>
+	          	</tr>
+	          	</foreach>
+			</tbody>
+	      </table>
+	      <div class="pagination">{$page}</div>
+  	</div>
+  </div>
+</div>
+<script src="__ROOT__/statics/js/common.js?"></script>
+<script type="text/javascript">
+$(function(){ 
+	$(".s_id").change(function(){
+		var val = $(this).children("option:selected").val();
+		var id = $(this).parent().parent().find("td:first").html();
+		$.ajax({
+		         type: "POST",
+		         url: "{:U('Money/stutas')}",
+		         dataType:'text',
+		         cache:'false',
+		         data: {s_id:val,id:id},
+		         success: function(data){
+			       alert(data);
+			       window.location.reload();
+		         	}
+		});
+	});
+	$('.num').click(function(){
+		var num = $(this).parent().prev().children(".textnum").val();
+		var id = $(this).parent().parent().find("td:first").html();
+		$.ajax({
+		         type: "POST",
+		         url: "{:U('Money/fmoney')}",
+		         dataType:'text',
+		         cache:'false',
+		         data: {num:num,id:id},
+		         success: function(data){
+			       alert(data);
+			       window.location.reload();
+		         	}
+		});
+	})
+});	
+</script>
+</body>
+</html>

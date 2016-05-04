@@ -1,0 +1,6 @@
+[ 2015-12-23T13:17:17+08:00 ] 121.42.0.19 /admin/ecshopfiles.md5
+ERR: 无法加载控制器:Ecshopfiles
+
+[ 2015-12-23T13:17:17+08:00 ] 121.42.0.19 /admin/help/zh_cn/database.xml
+ERR: 无法加载控制器:Help
+

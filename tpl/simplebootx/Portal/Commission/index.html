@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>觅房网房产分销平台</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="__TMPL__Public/css/public.css" type="text/css">
+		<link rel="stylesheet" href="__TMPL__Public/css/khu.css" type="text/css">
+		<script type="text/javascript" src="__TMPL__Public/js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="__TMPL__Public/js/main.js"></script>
+		<style>
+			body { overflow:-Scroll;overflow-x:hidden}
+		</style>
+	</head>
+	<body>
+<tc_include file="Public:nav" />
+	<!-- //正文开始 -->	
+	<div class="layout">
+	<div id="yj" class="mt10">
+		<div class="yjjs_info">
+			<div class="yjjs_infoL">
+				<img src="__TMPL__Public/images/member.gif">
+			</div>
+			<div class="yjjs_infoC">
+				<form name="bankcard" id="bankcard" method="post" action="{:U('Commission/dosave')}">
+					<!---->
+					<div class="bdcont marbot_01">
+						<div class="tit_01">手机号码：</div>
+						<input type="text" disabled="disabled" class="input1" id="trueName" autocomplete="off" onfocus="this.className='input2'" onblur="this.className='input1'" value="{$tel}" readonly="readonly">
+					</div>
+					<div class="bdcont marbot_01">
+						<div class="tit_01">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</div>
+						<input type="text" name="bankcard_name" class="input1" onfocus="this.className='input2'" onblur="this.className='input1'" id="trueName" autocomplete="off" style="float:left;" value="">
+						<div style="" class="inptips" id="error2">提交的姓名请务必与卡号开户姓名一致</div>
+					</div>
+					<div class="bdcont marbot_01">
+						<table width="100%" border="0">
+							<tbody>
+								<tr>
+									<td>
+										<div class="tit_01">开户银行：</div>
+										<input type="text" name="bankcard_bank" class="input1" onfocus="this.className='input2'" onblur="this.className='input1'" id="trueName" autocomplete="off" value="">
+									</td>
+									<td>
+										<div class="tit_01">银行卡号：</div>
+										<input type="text" name="bankcard_id" class="input1" onfocus="this.className='input2'" onblur="this.className='input1'" id="trueName" autocomplete="off" value="">
+									</td>
+									<td>
+										<a id="bank_submit" href="javascript:void(0)" class="greenbut_01" onclick="document.getElementById('bankcard').submit();">提交</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!---->
+				</form>
+			</div>
+			<!-- <div class="yjjs_infoR">
+				<a href="{:U('Commission/modify')}" target="_blank">修改个人信息</a>
+			</div> -->
+		</div>
+
+		<div class="yjjs_txt">
+			系统显示佣金为税前值，实际发放佣金需依法扣缴个人所得税。具体应缴额度将依据各地区税务局规定的比例进行扣除，表中税后佣金为参考值（国家标准税率表）
+		</div>
+		<table id="yj_box" border="1" bordercolor="#cccccc" cellpadding="10"  >
+			<tbody>
+				<tr class="">
+					<th width="16%">客户姓名</th>
+					<th width="16%">电话</th>
+					<th width="16%">成交楼盘</th>
+					<!-- <th width="16%">佣金总额</th> -->
+					<th width="16%">佣金余额</th>
+					<th width="16%">发放状态</th>
+				</tr>
+			</tbody>
+				<tr>
+				<foreach name="res" item="res">
+					<td>{$Think.session.loginname}</td>
+					<td>{$tel}</td>
+					<td>{$fang}</td>
+					<!-- <td>￥{$res.total_money}元</td> -->
+					<td>￥{$res.agent_money}元</td>
+					<if condition="$res['status'] eq 00">
+					<td>可申请</td>
+					<elseif condition="$res['status'] eq 01"/>
+					<td>在审核</td>
+					<elseif condition="$res['status'] eq 02" />
+					<td>已发放</td>
+					</if>
+				</foreach>	
+				</tr>
+		</table>
+		<ul class="ui-paging"></ul>
+	</div>
+</div>
+<div class="mb10"></div>
+<tc_include file="Public:footer" />
+<script type="text/javascript">
+	$(function(){
+		$(".menubar ul li").eq(4).addClass("active").siblings().removeClass("active");
+	})
+</script>
+	</body>
+</html>

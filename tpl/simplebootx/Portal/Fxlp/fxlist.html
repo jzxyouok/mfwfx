@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>觅房网房产分销平台</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="__TMPL__Public/css/public.css" type="text/css">
+		<link rel="stylesheet" href="__TMPL__Public/css/listDetail.css" type="text/css">
+		<script type="text/javascript" src="__TMPL__Public/js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="__TMPL__Public/js/main.js"></script>
+	</head>
+	<body>
+<tc_include file="Public:nav" />
+	<!-- //正文开始 -->
+<foreach name="fanglist" item="vo">	
+<div class="layout lpDetail  clearfix">
+	<img src="{$vo.picture_dir|default='./data/upload/lpDetailImg.gif'}" width="566px" height="300px" alt="" class="mt10">
+	<div class="items mt10">
+		<p class="itemTitle">{$vo.name}</p>
+		<p>参考均价：<em>{$vo.aveprice}</em>/平米</p>
+		<p>地址：【{$vo.city}】{$vo.addr}</p>
+		<p class="discount">卖点：<em>{$vo.selling}</em></p>
+		<ul class="itemDetail">
+			<li>该楼盘已成交0套，已经推荐{$vo.involved}次,可得最高佣金：{$vo.num}元</li>
+			<li>
+				<em class="roomtime">{$vo.roomtime}</em>
+				<em class='datedown'></em>
+			</li>
+		</ul>
+		<div class="yjDetail">
+			<span>最高佣金：{$vo.num}元/套</span>
+			<a href="javascript:void(0)"  class="recoClient"></a>
+		</div>
+		<div class="ask">
+			<p>咨询电话：<strong>{$vo.tel}</strong></p>
+			<p>咨询时间：8：30-18:00</p>
+		</div>
+	</div>
+</div>
+<div class="layout">
+	<div class="basicInfo mt20">
+	<div class="infoTitle">
+		<a class="active" href="#info_1">佣金规则</a>
+		<a href="#info_2">基本信息</a>
+		<a href="#info_3">户型图</a>
+		<a href="#info_4">楼盘相册</a>
+	</div>
+        <div class="info info_1 mb20" id="info_1">
+	          <div class="ltTitle"></div>
+	          <p>最高佣金：<em>{$vo.num}</em>元</p>
+	          <p>现金奖：</p>
+	          <p>佣金规则：<em>{$vo.commission_rule}</em></p>
+        </div>
+        <div class="info info_2 mb20" id="info_2">
+		<div class="ltTitle"></div>
+		<div class="left">
+			<p><span>楼盘楼层：{$vo.floor}</span><span>房屋属性：{$vo.attribute}</span></p>
+			<p><span>开盘时间：{$vo.opentime|date='Y-m-d',###}</span><span>截止时间：{$vo.roomtime|date='Y-m-d',###}</span></p>
+			<p><span>物业类型：{$vo.propertytypes}</span><span>装修情况：{$vo.redecorate}</span></p>
+			<p><span>开发商：{$vo.developer}</span><span>物业公司：{$vo.property}</span></p>
+		</div>
+			<img src="__TMPL__Public/images/map.gif" alt="" class="addr">
+        </div>
+
+		<div class="info info_3 mb20 hxImglist" id="info_3">
+			<div class="ltTitle"></div>
+			<ul>
+				<foreach item="img" name="img">
+				<li><img src="{$img|default='./data/upload/hxtu.gif'}" width="310px" height="300px"><span>A户型图80/平米</span></li>
+				</foreach>
+			</ul>
+		</div> 
+	<div class="info info_4 mb20 hxImglist" id="info_4">
+	<div class="ltTitle"></div>
+		<ul>
+			<foreach name="img_dir" item="img_dir">
+			<li><img src="{$img_dir|default='./data/upload/lpxc.gif'}" width="310px" height="300px" alt=""></li>
+			</foreach>
+		</ul>
+	</div>
+      </div> 
+      </div> 
+      </div>
+      </foreach>
+<tc_include file="Public:footer" />
+	<div id="bg" style=""></div>
+	<div id="tj" style="top: 50%;">
+		<ul id="tit">
+			<a href="javascript:void(0);" target="_top">X</a>
+			<li class="c">推荐新客户</li>
+		</ul>
+	<if condition="empty($_SESSION['loginname'])" >
+	<div class="tj_box no_dl show">
+		您还未登陆，请先<a href="{:U('Login/login')}">登录</a>或者<a href="{:U('Login/reg')}" class="btn2">免费注册</a>
+	</div> 
+	<else />
+	<div class="tj_box" id="tj_box0">
+	<form action="" method="post" id="_form">
+	<div class="debug"></div>
+		<dl>
+			<dt><i style="color:red">*&nbsp;&nbsp;</i>姓名</dt>
+			<dd><input type="text" class="txt" id="cname" name="name"><span style="color:red">姓名不能为空</span></dd>
+		</dl>
+		<dl>
+			<dt><i style="color:red">*&nbsp;&nbsp;</i>手机</dt>
+			<dd><input type="text" class="txt" id="mobile" maxlength="11" name="tel"><span style="color:red">请输入正确的手机号</span></dd>
+
+		</dl>
+		<dl>
+			<dt>区域</dt>
+			<dd><input type="text" class="txt" id="region" readonly="" name="city"  ></dd>
+		</dl>
+		<dl>
+			<dt>意向楼盘</dt>
+			<dd><input type="text" class="txt" id="lpname" readonly="" name="buliding"></dd>
+		</dl>
+		<!-- 	<ul class="tab-list" style="z-index: 10; display: none;" id="foot_search_ul"></ul>
+		<dl id="more">补充更多信息<i class=""></i></dl> -->
+	<!-- <div class="tj_ct hide" style="display: none;"> -->
+		<dl>
+			<dt>性别</dt>
+			<dd>
+				<label for="s1"><input type="radio" value="1" id="s1" name="sex" checked="checked">男</label>
+				<label for="s2"><input type="radio" value="2" id="s2" name="sex">女</label>
+			</dd>
+		</dl>       
+		<dl>
+			<dt>意向户型</dt>
+			<dd>
+				<label for="hx1"><input type="radio" value="一室" id="hx1" name="house">一室</label>
+				<label for="hx2"><input type="radio" value="二室" id="hx2" name="house" >二室</label>
+				<label for="hx3"><input type="radio" value="三室" id="hx3" name="house" checked="checked">三室</label>
+				<label for="hx4"><input type="radio" value="四室" id="hx4" name="house">四室</label>
+				<label for="hx5"><input type="radio" value="五室" id="hx5" name="house">五室</label>
+			</dd>
+		</dl>     
+		<dl>
+			<dt>意向面积</dt>
+			<dd><input type="text" class="txt" id="area" name="area">/平方米&nbsp;&nbsp;&nbsp;<span style="color:red">请填写数字</span></dd>
+		</dl>    
+		<dl>
+			<dt>意向价格</dt>
+			<dd><input type="text" class="txt" id="price" name="price">万元&nbsp;&nbsp;&nbsp;<span style="color:red">请填写数字</span></dd>
+		</dl>                    
+	<!-- </div> -->
+		<dl>
+			<input type="hidden" name="a_id" value="{$Think.session.id}" id="a_id" >
+			<a href="javascript:void(0);"  class="btn" id="addclient">提交推荐信息</a>
+		</dl>
+	</form>
+	</div>
+	</if>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			$(".menubar ul li").eq(1).addClass("active").siblings().removeClass("active");
+			$(".recoClient").live("click",function(){
+				$("#bg,#tj").show();
+				 var houseName=$(this).parents(".items").find(".itemTitle").text();
+			 	 $("#lpname").val(houseName);
+				var region=$(this).parents(".items").find("p").eq(2).text();
+				
+				var str=region.substr(3,region.length).split("】");
+				$("#region").val(str[0].substr(1,str[0].length));
+			});
+			
+			$("#tit a").click(function(){
+				$("#bg,#tj").hide();
+			});
+			$("#more").click(function(){
+				$(".tj_ct").toggle();
+			});
+
+	  	$(".recoClient").click(function(){
+	  		var FLTend = $(this).parent().prev(".itemDetail").children().children(".datedown").html();
+	  		if( FLTend =="活动已结束"){
+	  			alert("活动已结束!");
+	  			return false;
+	  		}	
+	  	})
+
+		$("#area").change(function(){
+				var txt=$(this).val();
+				if(txt.length>0&&(/^[0-9]*$/.test(txt))){
+				$(this).next("span").hide();
+				 return true;
+			} else{	
+				$(this).next("span").show(); 
+				 return false;	
+			}
+		});
+		$("#price").change(function(){
+				var txt=$(this).val();
+				if(txt.length>0&&(/^[0-9]*$/.test(txt))){
+				$(this).next("span").hide();
+					 return true;
+			} else{	
+				 $(this).next("span").show(); 	
+				 return false;
+			}
+		});
+
+		 $("#cname").change(function(){
+				var txt=$(this).val();
+				if(txt.length>0){
+				$(this).next("span").hide();
+					 return true;
+			} else{	
+				 $(this).next("span").show(); 	
+				 return false;
+			}
+		});
+	 	$("#mobile").change(function(){
+				var txt=$(this).val();
+				if(txt.length>0&&(/^(1){1}[0-9]{10}$/.test(txt))){
+				$(this).next("span").hide();
+					 return true;
+			} else{	
+				 $(this).next("span").show(); 	
+				 return false;
+			}
+		});
+		//提交信息
+		$('#addclient').click(function(){
+			var name = $("#cname").val();
+			var tel = $('#mobile').val();
+			var city  = $('#region').val();
+			var buliding = $('#lpname').val();
+			var area = $('#area').val();
+			var price =$('#price').val();
+			var a_id = $('#a_id').val();
+			var sex = $('input[name="sex"]:checked').val();
+			var house = $('input[name="house"]:checked').val();
+		     $.ajax({
+		         type: "POST",
+		         url: "{:U('Index/dosave')}",
+		         dataType:'text',
+		         data: {name:name,sex:sex,house:house,area:area,price:price,tel:tel,city:city,buliding:buliding,a_id:a_id},
+		         success: function(data){
+			       alert(data);
+			       $('#tj,#bg').hide();
+		         	}
+		     });
+		});
+
+			/*倒计时*/
+		function update(){
+			var now = new Date();
+			var nowTimes = now.getTime();
+			var years = document.getElementsByClassName('roomtime');
+			var datedowns = document.getElementsByClassName('datedown');
+		            for(var i=0;i<years.length;i++){
+		            	//datedowns[i].innerHTML = Math.floor(nowTimes/1000);
+		            	var leftsecond = parseInt((years[i].innerHTML-Math.floor(nowTimes/1000)));
+		            	var day1=Math.floor(leftsecond/(60*60*24)); 
+		   	 	var hour=Math.floor((leftsecond-day1*24*60*60)/3600); 
+		   	 	var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); 
+		   	 	var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); 
+		            	//years[i].innerHTML = (nowTimes-years[i].innerHTML);
+		            	if(day1<=0){
+				        var string = "活动已结束";
+				}else{
+				        var string = "距离活动结束时间还有:"+day1+"天"+hour+"小时"+minute+"分"+second+"秒";
+				}
+		            	datedowns[i].innerHTML =string;
+		            }
+		}
+
+		window.onload=function(){
+		    $(".roomtime").hide();
+		};
+		window.setInterval(update,1000);
+	});
+	</script>
+	</body>
+</html>

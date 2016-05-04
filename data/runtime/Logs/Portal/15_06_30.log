@@ -1,0 +1,726 @@
+[ 2015-06-30T15:47:52+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001514s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0011s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2015-06-30T15:47:52+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001617s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000549s ]
+
+[ 2015-06-30T15:47:52+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001669s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2015-06-30T15:47:53+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2015-06-30T15:47:53+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001516s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
+
+[ 2015-06-30T15:47:53+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001535s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011170s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011283s ]
+
+[ 2015-06-30T15:47:53+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001850s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2015-06-30T15:47:54+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001555s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2015-06-30T15:47:54+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=rstutas
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001694s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `s_id`,`rstutas` FROM `sp_fx_customer` WHERE `id` = 5  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2015-06-30T15:47:55+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001549s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2015-06-30T15:47:55+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001495s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0010s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2015-06-30T15:47:57+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001673s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2015-06-30T15:48:02+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=rstutas
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002333s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0009s ]
+SQL: SELECT `s_id`,`rstutas` FROM `sp_fx_customer` WHERE `id` = 5  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2015-06-30T15:48:03+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001509s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0009s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2015-06-30T15:48:03+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001533s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000549s ]
+
+[ 2015-06-30T15:48:04+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001476s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2015-06-30T15:48:46+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2015-06-30T15:48:46+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001550s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000594s ]
+
+[ 2015-06-30T15:48:46+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001504s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0011s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2015-06-30T15:48:46+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001824s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2015-06-30T15:48:59+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001657s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0007s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2015-06-30T15:48:59+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001699s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0007s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2015-06-30T15:48:59+08:00 ] 171.113.150.112 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001592s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2015-06-30T15:48:59+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001596s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2015-06-30T15:49:36+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001586s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0007s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2015-06-30T15:49:36+08:00 ] 171.113.150.112 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002535s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000650s ]
+
+[ 2015-06-30T15:49:38+08:00 ] 171.113.150.112 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001492s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0007s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2015-06-30T15:49:38+08:00 ] 171.113.150.112 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001525s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2015-06-30T15:49:38+08:00 ] 171.113.150.112 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001532s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2015-06-30T15:49:50+08:00 ] 171.113.150.112 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001627s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2015-06-30T15:49:50+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001514s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2015-06-30T15:49:50+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001685s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2015-06-30T15:49:50+08:00 ] 171.113.150.112 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001585s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2015-06-30T15:51:21+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001692s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2015-06-30T15:51:21+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001863s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000629s ]
+
+[ 2015-06-30T15:51:37+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001486s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2015-06-30T15:51:37+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001628s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0009s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2015-06-30T15:51:37+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001536s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000688s ]
+
+[ 2015-06-30T15:51:43+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001593s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2015-06-30T15:52:28+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001494s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2015-06-30T15:52:28+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001678s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2015-06-30T15:52:36+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0010s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2015-06-30T15:53:22+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001640s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0010s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2015-06-30T15:53:22+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001596s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0009s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2015-06-30T15:53:23+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001535s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0010s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2015-06-30T15:53:28+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001513s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2015-06-30T15:53:30+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001473s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0010s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2015-06-30T15:53:30+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001563s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2015-06-30T15:53:33+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001587s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0007s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2015-06-30T15:53:33+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001520s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0010s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2015-06-30T15:54:10+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001699s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2015-06-30T15:54:32+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001648s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0007s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2015-06-30T15:54:32+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001759s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0009s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2015-06-30T15:54:38+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001462s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0009s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000721s ]
+
+[ 2015-06-30T15:54:38+08:00 ] 119.98.148.85 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001509s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0009s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2015-06-30T16:02:19+08:00 ] 171.113.150.112 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001581s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0012s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2015-06-30T16:02:19+08:00 ] 171.113.150.112 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001666s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2015-06-30T16:13:01+08:00 ] 171.113.150.112 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2015-06-30T16:13:01+08:00 ] 171.113.150.112 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001581s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0009s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2015-06-30T16:13:02+08:00 ] 171.113.150.112 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003288s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0009s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2015-06-30T16:13:02+08:00 ] 171.113.150.112 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001491s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
+[ 2015-06-30T16:13:08+08:00 ] 171.113.150.112 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001446s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2015-06-30T16:13:08+08:00 ] 171.113.150.112 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001537s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0010s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2015-06-30T16:13:08+08:00 ] 171.113.150.112 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001507s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2015-06-30T16:13:09+08:00 ] 171.113.150.112 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001514s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0008s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2015-06-30T16:13:09+08:00 ] 171.113.150.112 /index.php?g=&m=Fang&a=reason
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001715s ]
+SQL: SHOW COLUMNS FROM `sp_fx_customer` [ RunTime:0.0009s ]
+SQL: SELECT `reason` FROM `sp_fx_customer` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+

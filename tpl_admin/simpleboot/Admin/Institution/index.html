@@ -1,0 +1,53 @@
+<admintpl file="header"/>
+<body class="J_scroll_fixed">
+<div class="wrap jj">
+  <ul class="nav nav-tabs">
+     <li class="active"><a href="{:U('Institution/index')}">所有机构</a></li>
+      <li><a href="{:U('Institution/addInst')}">增加机构</a></li>
+  </ul>
+  <div class="common-form">
+    <form method="post" class="J_ajaxForm" action="#">
+      <div class="table_list">
+	    <table width="100%" class="table table-hover">
+	        <thead>
+	          <tr>
+	            <th width="50">ID</th>
+	            <th>代码</th>
+	            <th>名称</th>
+	            <th>机构级别</th>
+	            <th>备注</th>
+	            <th>状态</th>
+		<th>创建时间</th>
+	            <th width="120">操作</th>
+	          </tr>
+	        </thead>
+	        <tbody>
+	        	<foreach name="list" item="vo">
+	        	<tr>
+		            <td>{$vo.id}</td>
+		            <td>{$vo.code}</td>
+		            <td>{$vo.outfit}</td>
+		            <td>{$vo.level}</td>
+		            <td>{$vo.desc|strip_tags|mb_substr=0,12,'utf-8'}</td>
+					<if condition = "$vo['status'] eq '01'">
+					<td>有效</td>
+					<else/>
+					<td>无效</td>
+					</if>
+		            <td>{$vo.create_time}</td>
+		            <td>
+			            <a href="{:U('Institution/delInst',array('id'=>$vo['id']))}">删除</a>|
+						<a href="{:U('Institution/modInst',array('id'=>$vo['id']))}">修改</a>
+			        </td>
+	          	</tr>
+	          	</foreach>
+			</tbody>
+	      </table>
+	      <div class="pagination">{$Page}</div>
+  		</div>
+    </form>
+  </div>
+</div>
+<script src="__ROOT__/statics/js/common.js?"></script>
+</body>
+</html>

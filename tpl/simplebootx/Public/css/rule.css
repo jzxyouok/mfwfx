@@ -1,0 +1,3 @@
+.banner{ margin:0 auto; width:100%; text-align: center;background-color: #fef2f3;}
+.ad_2{  height:155px; background: url(../images/ad_1_2.gif) no-repeat; position:relative;}
+.ad_2 a{position:absolute; left:346px; top:101px; overflow: hidden;}
